@@ -2,11 +2,10 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:punotes/Screen/tabbar.dart';
 
 import '../widgets/appbar.dart';
 import '../widgets/mydrawer.dart';
-
-const Color appcolor = Color.fromARGB(255, 45, 45, 45);
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,7 +15,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       drawer: MainDrawer(),
       appBar: MyAppBar(
-        backcolor: appcolor,
+        height: 50.0,
         title: 'PU Notes',
       ),
       body: HomePageBody(),
@@ -33,46 +32,82 @@ class HomePageBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        childAspectRatio: 1,
         crossAxisCount: 2,
       ),
       children: [
         MyGridView(
           nameText: 'Civil',
+          myImage: 'assest/img/Civil.png',
+          tapHere: () {
+            titletext = 'Civil';
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => MyTabBar()));
+          },
         ),
-        MyGridView(nameText: 'Computer'),
-        MyGridView(nameText: 'Electrical'),
-        MyGridView(nameText: 'Electronics'),
+        MyGridView(
+          nameText: 'Computer',
+          myImage: 'assest/img/Computer.png',
+          tapHere: () {
+            titletext = 'Computer';
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => MyTabBar()));
+          },
+        ),
+        MyGridView(
+          nameText: 'Electrical',
+          myImage: 'assest/img/Electrical.png',
+          tapHere: () {
+            titletext = 'Electrical';
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => MyTabBar()));
+          },
+        ),
+        MyGridView(
+            nameText: 'Electronics',
+            myImage: 'assest/img/Electronics.png',
+            tapHere: () {
+              titletext = 'Electronics';
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => MyTabBar()));
+            }),
       ],
     );
   }
 }
 
 class MyGridView extends StatelessWidget {
-  String nameText;
-  MyGridView({Key? key, this.nameText = 'Hello'}) : super(key: key);
+  final nameText;
+  final myImage;
+  final tapHere;
+  const MyGridView({Key? key, this.nameText, this.myImage, this.tapHere})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {},
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            'assest/img/Logo.png',
-            height: 100,
-            width: 100,
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text(
-            nameText.toString(),
-            style: TextStyle(
-              fontSize: 16,
+    return Padding(
+      padding: const EdgeInsets.only(top: 20),
+      child: InkWell(
+        onTap: tapHere,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              myImage,
+              height: 100,
+              width: 100,
             ),
-          )
-        ],
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              nameText.toString(),
+              style: TextStyle(
+                fontSize: 16,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

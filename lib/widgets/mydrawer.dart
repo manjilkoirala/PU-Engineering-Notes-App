@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_typing_uninitialized_variables, must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:share/share.dart';
 
 const Color appcolor = Color.fromARGB(255, 68, 68, 68);
 
@@ -52,7 +53,8 @@ class MainDrawer extends StatelessWidget {
           customicon: Icons.share_outlined,
           customtext: 'Share',
           followlink: () {
-            Navigator.pop(context);
+            Share.share(
+                'https://play.google.com/store/apps/details?id=com.techlearnhere.nepresults');
           },
         ),
         CustomListTile(
@@ -84,13 +86,13 @@ class MainDrawer extends StatelessWidget {
 //CustomList
 
 class CustomListTile extends StatelessWidget {
-  IconData customicon;
+  final customicon;
   String customtext;
   final followlink;
 
   CustomListTile(
       {Key? key,
-      required this.customicon,
+      this.customicon,
       required this.customtext,
       required this.followlink})
       : super(key: key);

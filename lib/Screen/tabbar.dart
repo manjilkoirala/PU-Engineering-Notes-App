@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-
+import 'package:punotes/Screen/pdfview.dart';
 import 'package:punotes/widgets/appbar.dart';
 import 'package:punotes/widgets/mydrawer.dart';
 
@@ -37,6 +37,7 @@ class MyTabBar extends StatelessWidget {
           padding: const EdgeInsets.only(top: 10),
           child: TabBarView(children: [
             CustomListView(
+              //Computer
               followlink1: () {
                 // if (titletext == 'Computer') {
                 //   Navigator.push(context,
@@ -45,16 +46,93 @@ class MyTabBar extends StatelessWidget {
                 // }
               },
               followlink2: () {
-                // if (titletext == 'Computer') {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => PDFViewerPage(
-                //                 title: "2nd Semester Computer",
-                //               )));
-                // }
+                if (titletext == 'Computer') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Second Semester Computer",
+                                path:
+                                    'assest/files/syllabus/computer/2syllabus.pdf',
+                              )));
+                }
               },
-            ), //Syllabus
+              followlink3: () {
+                if (titletext == 'Computer') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Third Semester Computer",
+                                path:
+                                    'assest/files/syllabus/computer/3syllabus.pdf',
+                              )));
+                }
+              },
+              followlink4: () {
+                if (titletext == 'Computer') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Fourth Semester Computer",
+                                path:
+                                    'assest/files/syllabus/computer/4syllabus.pdf',
+                              )));
+                }
+              },
+              followlink5: () {
+                if (titletext == 'Computer') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Fifth Semester Computer",
+                                path:
+                                    'assest/files/syllabus/computer/5syllabus.pdf',
+                              )));
+                }
+              },
+              followlink6: () {
+                if (titletext == 'Computer') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Sixth Semester Computer",
+                                path:
+                                    'assest/files/syllabus/computer/6syllabus.pdf',
+                              )));
+                }
+              },
+              followlink7: () {
+                if (titletext == 'Computer') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Seventh Semester Computer",
+                                path:
+                                    'assest/files/syllabus/computer/7syllabus.pdf',
+                              )));
+                }
+              },
+
+              followlink8: () {
+                if (titletext == 'Computer') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Eight Semester Computer",
+                                path:
+                                    'assest/files/syllabus/computer/8syllabus.pdf',
+                              )));
+                }
+              },
+            ),
+
+            //Syllabus
 
             CustomListView(), //Notes
 

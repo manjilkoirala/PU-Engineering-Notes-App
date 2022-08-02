@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:punotes/Screen/home.dart';
-import 'package:punotes/Screen/pdfviwer.dart';
+
 import 'package:punotes/widgets/appbar.dart';
 import 'package:punotes/widgets/mydrawer.dart';
 
@@ -39,20 +38,21 @@ class MyTabBar extends StatelessWidget {
           child: TabBarView(children: [
             CustomListView(
               followlink1: () {
-                if (titletext == 'Computer') {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomePage()));
-                }
+                // if (titletext == 'Computer') {
+                //   Navigator.push(context,
+                //       MaterialPageRoute(builder: (context) => HomePage())
+                //       );
+                // }
               },
               followlink2: () {
-                if (titletext == 'Computer') {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => PDFViewerPage(
-                                title: "2nd Semester Computer",
-                              )));
-                }
+                // if (titletext == 'Computer') {
+                //   Navigator.push(
+                //       context,
+                //       MaterialPageRoute(
+                //           builder: (context) => PDFViewerPage(
+                //                 title: "2nd Semester Computer",
+                //               )));
+                // }
               },
             ), //Syllabus
 

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
 import 'package:punotes/Screen/pdfview.dart';
@@ -68,6 +68,15 @@ class MyTabBar extends StatelessWidget {
                                     'assest/files/syllabus/computer/3syllabus.pdf',
                               )));
                 }
+                if (titletext == 'Civil') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Third Semester Civil",
+                                path: 'assest/files/syllabus/civil/3civil.pdf',
+                              )));
+                }
               },
               followlink4: () {
                 if (titletext == 'Computer') {
@@ -78,6 +87,15 @@ class MyTabBar extends StatelessWidget {
                                 title: "Fourth Semester Computer",
                                 path:
                                     'assest/files/syllabus/computer/4syllabus.pdf',
+                              )));
+                }
+                if (titletext == 'Civil') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Fourth Semester Civil",
+                                path: 'assest/files/syllabus/civil/4civil.pdf',
                               )));
                 }
               },
@@ -92,6 +110,15 @@ class MyTabBar extends StatelessWidget {
                                     'assest/files/syllabus/computer/5syllabus.pdf',
                               )));
                 }
+                if (titletext == 'Civil') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Fifth Semester Civil",
+                                path: 'assest/files/syllabus/civil/5civil.pdf',
+                              )));
+                }
               },
               followlink6: () {
                 if (titletext == 'Computer') {
@@ -102,6 +129,15 @@ class MyTabBar extends StatelessWidget {
                                 title: "Sixth Semester Computer",
                                 path:
                                     'assest/files/syllabus/computer/6syllabus.pdf',
+                              )));
+                }
+                if (titletext == 'Civil') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Sixth Semester Civil",
+                                path: 'assest/files/syllabus/civil/6civil.pdf',
                               )));
                 }
               },
@@ -116,6 +152,15 @@ class MyTabBar extends StatelessWidget {
                                     'assest/files/syllabus/computer/7syllabus.pdf',
                               )));
                 }
+                if (titletext == 'Civil') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Seventh Semester Civil",
+                                path: 'assest/files/syllabus/civil/7civil.pdf',
+                              )));
+                }
               },
 
               followlink8: () {
@@ -127,6 +172,15 @@ class MyTabBar extends StatelessWidget {
                                 title: "Eight Semester Computer",
                                 path:
                                     'assest/files/syllabus/computer/8syllabus.pdf',
+                              )));
+                }
+                if (titletext == 'Civil') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PDFViewerPage(
+                                title: "Eight Semester Civil",
+                                path: 'assest/files/syllabus/civil/8civil.pdf',
                               )));
                 }
               },

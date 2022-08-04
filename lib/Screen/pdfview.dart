@@ -37,7 +37,7 @@ class PDFViewerPageURL extends StatelessWidget {
           swipeHorizontal: false,
           autoSpacing: false,
           pageFling: true,
-        ).fromUrl(
+        ).cachedFromUrl(
           link,
           placeholder: (progress) => Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -54,7 +54,13 @@ class PDFViewerPageURL extends StatelessWidget {
               ),
             ],
           ),
-          errorWidget: (error) => Center(child: Text(error.toString())),
+          errorWidget: (error) => const Center(
+            child: Text(
+              'You are not connected to internet or some error occur.',
+              style: TextStyle(
+                  color: Color.fromARGB(255, 225, 28, 14), fontSize: 16),
+            ),
+          ),
         ));
   }
 }

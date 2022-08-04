@@ -3,9 +3,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:punotes/Screen/tabbar.dart';
+import 'package:punotes/model/civilnotes.dart';
 import 'package:punotes/widgets/appbar.dart';
 
-import '../model/notes.dart';
+import '../model/computernotes.dart';
+import '../model/notemodel.dart';
 import '../widgets/customlisttabbar.dart';
 
 class Subject extends StatelessWidget {
@@ -40,6 +42,31 @@ class Subject extends StatelessWidget {
       }
       if (title == "Eight Semester") {
         func = Computer.computer7th;
+      }
+    } else if (titletext == "Civil") {
+      if (title == "First Semester") {
+        func = Civil.civil1st;
+      }
+      if (title == "Second Semester") {
+        func = Civil.civil2nd;
+      }
+      if (title == "Third Semester") {
+        func = Civil.civil3rd;
+      }
+      if (title == "Fourth Semester") {
+        func = Civil.civil4th;
+      }
+      if (title == "Fifth Semester") {
+        func = Civil.civil5th;
+      }
+      if (title == "Sixth Semester") {
+        func = Civil.civil6th;
+      }
+      if (title == "Seventh Semester") {
+        func = Civil.civil7th;
+      }
+      if (title == "Eight Semester") {
+        func = Civil.civil8th;
       }
     }
 

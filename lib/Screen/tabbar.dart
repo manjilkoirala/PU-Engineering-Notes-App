@@ -26,15 +26,15 @@ class MyTabBar extends StatelessWidget {
           button: const TabBar(tabs: [
             Text(
               'Syllabus',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 16),
             ),
             Text(
               'Notes',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 16),
             ),
             Text(
               'Questions',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 16),
             )
           ]),
         ),
@@ -48,10 +48,10 @@ class MyTabBar extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const PDFViewerPageURL(
+                          builder: (context) => const PDFViewerPage(
                                 title: "First Semester Computer",
-                                link:
-                                    'http://africau.edu/images/default/sample.pdf',
+                                path:
+                                    'assest/files/syllabus/computer/1syllabus.pdf',
                               )));
                 }
               },
@@ -65,6 +65,15 @@ class MyTabBar extends StatelessWidget {
                                 path:
                                     'assest/files/syllabus/computer/2syllabus.pdf',
                               )));
+                } else if (titletext == 'Electrical') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PDFViewerPage(
+                                title: "Second Semester Electrical",
+                                path:
+                                    'assest/files/syllabus/electrical/2syllabus.pdf',
+                              )));
                 }
               },
               followlink3: () {
@@ -77,14 +86,22 @@ class MyTabBar extends StatelessWidget {
                                 path:
                                     'assest/files/syllabus/computer/3syllabus.pdf',
                               )));
-                }
-                if (titletext == 'Civil') {
+                } else if (titletext == 'Civil') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const PDFViewerPage(
                                 title: "Third Semester Civil",
                                 path: 'assest/files/syllabus/civil/3civil.pdf',
+                              )));
+                } else if (titletext == 'Electrical') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PDFViewerPage(
+                                title: "Third Semester Electrical",
+                                path:
+                                    'assest/files/syllabus/electrical/3syllabus.pdf',
                               )));
                 }
               },
@@ -98,14 +115,22 @@ class MyTabBar extends StatelessWidget {
                                 path:
                                     'assest/files/syllabus/computer/4syllabus.pdf',
                               )));
-                }
-                if (titletext == 'Civil') {
+                } else if (titletext == 'Civil') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const PDFViewerPage(
                                 title: "Fourth Semester Civil",
                                 path: 'assest/files/syllabus/civil/4civil.pdf',
+                              )));
+                } else if (titletext == 'Electrical') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PDFViewerPage(
+                                title: "Fourth Semester Electrical",
+                                path:
+                                    'assest/files/syllabus/electrical/4syllabus.pdf',
                               )));
                 }
               },
@@ -119,14 +144,22 @@ class MyTabBar extends StatelessWidget {
                                 path:
                                     'assest/files/syllabus/computer/5syllabus.pdf',
                               )));
-                }
-                if (titletext == 'Civil') {
+                } else if (titletext == 'Civil') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const PDFViewerPage(
                                 title: "Fifth Semester Civil",
                                 path: 'assest/files/syllabus/civil/5civil.pdf',
+                              )));
+                } else if (titletext == 'Electrical') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PDFViewerPage(
+                                title: "Fifth Semester Electrical",
+                                path:
+                                    'assest/files/syllabus/electrical/5syllabus.pdf',
                               )));
                 }
               },
@@ -288,7 +321,7 @@ class MyTabBar extends StatelessWidget {
                           builder: (context) => const PDFViewerPageURL(
                                 title: "Second Semester Computer",
                                 link:
-                                    'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/question%20bank%202nd%20(2).pdf?alt=media&token=2f551dbd-9e67-4d9c-bb90-7dd1f8d16e43',
+                                    'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_QB%2F2nd%20semester.pdf?alt=media&token=4e47110d-6c4c-42d6-bea9-8dbdd57e438c',
                               )));
                 }
               },
@@ -297,13 +330,12 @@ class MyTabBar extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const PDFViewerPage(
+                          builder: (context) => const PDFViewerPageURL(
                                 title: "Third Semester Computer",
-                                path:
-                                    'assest/files/syllabus/computer/3syllabus.pdf',
+                                link:
+                                    'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_QB%2F3rd%20Semester.pdf?alt=media&token=873c184d-6aa1-4e3b-bc01-54f4da61e751',
                               )));
-                }
-                if (titletext == 'Civil') {
+                } else if (titletext == 'Civil') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -312,16 +344,26 @@ class MyTabBar extends StatelessWidget {
                                 path: 'assest/files/syllabus/civil/3civil.pdf',
                               )));
                 }
+                if (titletext == 'Electrical') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PDFViewerPageURL(
+                                title: "Third Semester Electrical",
+                                link:
+                                    'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Electrical_QB%2F3rd%20electrical.pdf?alt=media&token=bb30efc5-8b97-4fc7-8510-bb8f1394bb07',
+                              )));
+                }
               },
               followlink4: () {
                 if (titletext == 'Computer') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const PDFViewerPage(
+                          builder: (context) => const PDFViewerPageURL(
                                 title: "Fourth Semester Computer",
-                                path:
-                                    'assest/files/syllabus/computer/4syllabus.pdf',
+                                link:
+                                    'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_QB%2F4th%20semester.pdf?alt=media&token=b0d3b4dd-2266-4f7b-96e9-2781d732910b',
                               )));
                 }
                 if (titletext == 'Civil') {
@@ -333,16 +375,26 @@ class MyTabBar extends StatelessWidget {
                                 path: 'assest/files/syllabus/civil/4civil.pdf',
                               )));
                 }
+                if (titletext == 'Electrical') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PDFViewerPageURL(
+                                title: "Fourth Semester Computer",
+                                link:
+                                    'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Electrical_QB%2F4th%20electrical.pdf?alt=media&token=8be305f1-6a53-4281-8cf8-0c7df1919ee6',
+                              )));
+                }
               },
               followlink5: () {
                 if (titletext == 'Computer') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const PDFViewerPage(
+                          builder: (context) => const PDFViewerPageURL(
                                 title: "Fifth Semester Computer",
-                                path:
-                                    'assest/files/syllabus/computer/5syllabus.pdf',
+                                link:
+                                    'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_QB%2F5th%20semester.pdf?alt=media&token=03226c49-3d2e-4842-b3ad-b9bb521acd25',
                               )));
                 }
                 if (titletext == 'Civil') {

@@ -71,32 +71,3 @@ class Computer {
     Notes(subjecttitle: 'Advance Computer Architecture', path: ''),
   ];
 }
-
-class Syllabus {
-  static final computer = [
-    Notes(
-        subjecttitle: 'First Semester Computer',
-        path: 'assest/files/syllabus/computer/1syllabus.pdf'),
-    Notes(
-        subjecttitle: 'Second Semester Computer',
-        path: 'assest/files/syllabus/computer/2syllabus.pdf'),
-    Notes(
-        subjecttitle: 'Third Semester Computer',
-        path: 'assest/files/syllabus/computer/3syllabus.pdf'),
-    Notes(
-        subjecttitle: 'Fourth Semester Computer',
-        path: 'assest/files/syllabus/computer/4syllabus.pdf'),
-    Notes(
-        subjecttitle: 'Fifth Semester Computer',
-        path: 'assest/files/syllabus/computer/5syllabus.pdf'),
-    Notes(
-        subjecttitle: 'Sixth Semester Computer',
-        path: 'assest/files/syllabus/computer/6syllabus.pdf'),
-    Notes(
-        subjecttitle: 'Seventh Semester Computer',
-        path: 'assest/files/syllabus/computer/7syllabus.pdf'),
-    Notes(
-        subjecttitle: 'Eight Semester Computer',
-        path: 'assest/files/syllabus/computer/8syllabus.pdf')
-  ];
-}

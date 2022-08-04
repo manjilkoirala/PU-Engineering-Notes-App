@@ -1,0 +1,257 @@
+{
+   "faculty":[
+        
+    {
+        "Computer":[
+         {
+            "First":[
+        {
+            "name":"Engineering Math-1",
+            "Path": ""    
+        },
+        {
+            "name":"Pysics",
+            "Path": "" 
+
+        },
+        {
+            "name":"EDCT",
+            "Path": "" 
+
+        },
+        {
+            "name":"Communicative English",
+            "Path": "" 
+
+        },
+        {
+            "name":"Computer Programming",
+            "Path": "" 
+
+        }
+        
+        ]},
+        {
+            "Second":[
+                {
+                    "name":"Engineering Math-II",
+                    "Path": ""    
+                },
+                {
+                    "name":"Chemistry",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Applied Mechanics",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Electrical  Engineering",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Object Oriented Programming",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Digital Logic",
+                    "Path":""
+                }
+            ]
+        },
+        {
+            "Third":[
+                {
+                    "name":"Engineering Math-III",
+                    "Path": ""    
+                },
+                {
+                    "name":"Information System Design",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Electronic Devices & Circuit",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Data Structure and Algorithm",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Computer Organization and Design",
+                    "Path": "" 
+        
+                }
+               
+            ]
+        },
+        {
+            "Fourth":[
+                {
+                    "name":"Microprocessor",
+                    "Path": ""    
+                },
+                {
+                    "name":"Database Management System",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Free and Open Source Programs",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Discrete Mathematics",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Communication System",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Applied Sociology",
+                    "Path":""
+                }
+            ]
+        },
+        {
+            "Fifth":[
+                {
+                    "name":"Numerical Method",
+                    "Path": ""    
+                },
+                {
+                    "name":"Algorithm Analysis and Design",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Computer Graphics",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Operating System",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Research Methodology",
+                    "Path": "" 
+        
+                }
+                
+            ]
+        },
+        {
+            "Second":[
+                {
+                    "name":"Project and Organization Management",
+                    "Path": ""    
+                },
+                {
+                    "name":"Theory of Computation",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Multimedia Technology",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Computer Network",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Probability and Statistics",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Engineering Economics",
+                    "Path":""
+                }
+            ]
+        },
+        {
+            "Seventh":[
+                {
+                    "name":"Entrepreneurship",
+                    "Path": ""    
+                },
+                {
+                    "name":"Artificial Intelligence",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Software Engineering",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Simulation and Modeling",
+                    "Path": "" 
+        
+                }
+            ]
+        },
+        {
+            "Eight":[
+                {
+                    "name":"Data mining and Data warehousing",
+                    "Path": ""    
+                },
+                {
+                    "name":"Cryptography",
+                    "Path": "" 
+        
+                },
+                {
+                    "name":"Advance Computer Architecture",
+                    "Path": "" 
+        
+                }
+                
+            ]
+        }
+        
+        
+      
+   
+    ]
+
+}
+
+
+
+
+
+
+
+    
+
+
+
+]
+
+
+
+
+
+
+
+
+}

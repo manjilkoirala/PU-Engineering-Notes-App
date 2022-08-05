@@ -66,6 +66,7 @@ flutter:
     - assest/img/
     - assest/files/syllabus/computer/
     - assest/files/syllabus/civil/
+    - assest/files/syllabus/electrical/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

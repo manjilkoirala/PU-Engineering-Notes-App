@@ -1,6 +1,6 @@
 class Notes {
   String subjecttitle;
-  String path;
+  var path;
 
   Notes({
     required this.subjecttitle,

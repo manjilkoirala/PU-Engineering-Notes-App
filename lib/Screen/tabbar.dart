@@ -5,7 +5,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:punotes/Screen/pdfview.dart';
-import 'package:punotes/Screen/subjects.dart';
+import 'package:punotes/widgets/subjects.dart';
+import 'package:punotes/model/notemodel.dart';
 import 'package:punotes/widgets/appbar.dart';
 
 import '../widgets/customlisttabbar.dart';
@@ -56,23 +57,14 @@ class MyTabBar extends StatelessWidget {
                 }
               },
               followlink2: () {
-                if (titletext == 'Computer') {
+                if (titletext == 'Computer' || titletext == 'Electrical') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const PDFViewerPage(
-                                title: "Second Semester Computer",
+                                title: "Second Semester Computer & Electrical",
                                 path:
                                     'assest/files/syllabus/computer/2syllabus.pdf',
-                              )));
-                } else if (titletext == 'Electrical') {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const PDFViewerPage(
-                                title: "Second Semester Electrical",
-                                path:
-                                    'assest/files/syllabus/electrical/2syllabus.pdf',
                               )));
                 }
               },
@@ -101,7 +93,7 @@ class MyTabBar extends StatelessWidget {
                           builder: (context) => const PDFViewerPage(
                                 title: "Third Semester Electrical",
                                 path:
-                                    'assest/files/syllabus/electrical/3syllabus.pdf',
+                                    'assest/files/syllabus/electrical/3electrical.pdf',
                               )));
                 }
               },
@@ -130,7 +122,7 @@ class MyTabBar extends StatelessWidget {
                           builder: (context) => const PDFViewerPage(
                                 title: "Fourth Semester Electrical",
                                 path:
-                                    'assest/files/syllabus/electrical/4syllabus.pdf',
+                                    'assest/files/syllabus/electrical/4electrical.pdf',
                               )));
                 }
               },
@@ -159,7 +151,7 @@ class MyTabBar extends StatelessWidget {
                           builder: (context) => const PDFViewerPage(
                                 title: "Fifth Semester Electrical",
                                 path:
-                                    'assest/files/syllabus/electrical/5syllabus.pdf',
+                                    'assest/files/syllabus/electrical/5electrical.pdf',
                               )));
                 }
               },
@@ -173,14 +165,22 @@ class MyTabBar extends StatelessWidget {
                                 path:
                                     'assest/files/syllabus/computer/6syllabus.pdf',
                               )));
-                }
-                if (titletext == 'Civil') {
+                } else if (titletext == 'Civil') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const PDFViewerPage(
                                 title: "Sixth Semester Civil",
                                 path: 'assest/files/syllabus/civil/6civil.pdf',
+                              )));
+                } else if (titletext == 'Electrical') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PDFViewerPage(
+                                title: "Sixth Semester Electrical",
+                                path:
+                                    'assest/files/syllabus/electrical/6electrical.pdf',
                               )));
                 }
               },
@@ -194,14 +194,22 @@ class MyTabBar extends StatelessWidget {
                                 path:
                                     'assest/files/syllabus/computer/7syllabus.pdf',
                               )));
-                }
-                if (titletext == 'Civil') {
+                } else if (titletext == 'Civil') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const PDFViewerPage(
                                 title: "Seventh Semester Civil",
                                 path: 'assest/files/syllabus/civil/7civil.pdf',
+                              )));
+                } else if (titletext == 'Electrical') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PDFViewerPage(
+                                title: "Seventh Semester Electrical",
+                                path:
+                                    'assest/files/syllabus/electrical/7electrical.pdf',
                               )));
                 }
               },
@@ -215,14 +223,22 @@ class MyTabBar extends StatelessWidget {
                                 path:
                                     'assest/files/syllabus/computer/8syllabus.pdf',
                               )));
-                }
-                if (titletext == 'Civil') {
+                } else if (titletext == 'Civil') {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const PDFViewerPage(
                                 title: "Eight Semester Civil",
                                 path: 'assest/files/syllabus/civil/8civil.pdf',
+                              )));
+                } else if (titletext == 'Electrical') {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PDFViewerPage(
+                                title: "Eight Semester Electrical",
+                                path:
+                                    'assest/files/syllabus/electrical/8electrical.pdf',
                               )));
                 }
               },

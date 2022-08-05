@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_typing_uninitialized_variables, must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:punotes/Screen/about.dart';
 import 'package:share/share.dart';
 
 const Color appcolor = Color.fromARGB(255, 68, 68, 68);
@@ -68,7 +69,8 @@ class MainDrawer extends StatelessWidget {
           customicon: Icons.info_outline,
           customtext: 'About',
           followlink: () {
-            Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => AboutApp()));
           },
         ),
         CustomListTile(

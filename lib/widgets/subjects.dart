@@ -2,13 +2,15 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
+import 'package:punotes/Screen/pdfview.dart';
 import 'package:punotes/Screen/tabbar.dart';
 import 'package:punotes/model/civilnotes.dart';
+import 'package:punotes/model/electricalnotes.dart';
 import 'package:punotes/widgets/appbar.dart';
 
 import '../model/computernotes.dart';
 import '../model/notemodel.dart';
-import '../widgets/customlisttabbar.dart';
+import 'customlisttabbar.dart';
 
 class Subject extends StatelessWidget {
   final title;
@@ -21,27 +23,20 @@ class Subject extends StatelessWidget {
     if (titletext == "Computer") {
       if (title == "First Semester") {
         func = Computer.computer1st;
-      }
-      if (title == "Second Semester") {
+      } else if (title == "Second Semester") {
         func = Computer.computer2nd;
-      }
-      if (title == "Third Semester") {
+      } else if (title == "Third Semester") {
         func = Computer.computer3rd;
-      }
-      if (title == "Fourth Semester") {
+      } else if (title == "Fourth Semester") {
         func = Computer.computer4th;
-      }
-      if (title == "Fifth Semester") {
+      } else if (title == "Fifth Semester") {
         func = Computer.computer5th;
-      }
-      if (title == "Sixth Semester") {
+      } else if (title == "Sixth Semester") {
         func = Computer.computer6th;
-      }
-      if (title == "Seventh Semester") {
+      } else if (title == "Seventh Semester") {
         func = Computer.computer7th;
-      }
-      if (title == "Eight Semester") {
-        func = Computer.computer7th;
+      } else if (title == "Eight Semester") {
+        func = Computer.computer8th;
       }
     } else if (titletext == "Civil") {
       if (title == "First Semester") {
@@ -68,6 +63,31 @@ class Subject extends StatelessWidget {
       if (title == "Eight Semester") {
         func = Civil.civil8th;
       }
+    } else if (titletext == "Electrical") {
+      if (title == "First Semester") {
+        func = Electrical.electrical1st;
+      }
+      if (title == "Second Semester") {
+        func = Electrical.electrical2nd;
+      }
+      if (title == "Third Semester") {
+        func = Electrical.electrical3rd;
+      }
+      if (title == "Fourth Semester") {
+        func = Electrical.electrical4th;
+      }
+      if (title == "Fifth Semester") {
+        func = Electrical.electrical5th;
+      }
+      if (title == "Sixth Semester") {
+        func = Electrical.electrical6th;
+      }
+      if (title == "Seventh Semester") {
+        func = Electrical.electrical7th;
+      }
+      if (title == "Eight Semester") {
+        func = Electrical.electrical8th;
+      }
     }
 
     return Scaffold(
@@ -92,6 +112,17 @@ class SubjectList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomTile(customtext: item.subjecttitle);
+    return CustomTile(
+      customtext: item.subjecttitle,
+      followlink: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => PDFViewerPageURL(
+                      link: item.path,
+                      title: item.subjecttitle,
+                    )));
+      },
+    );
   }
 }

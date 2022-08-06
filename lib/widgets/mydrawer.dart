@@ -1,8 +1,11 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_typing_uninitialized_variables, must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:open_mail_app/open_mail_app.dart';
 import 'package:punotes/Screen/about.dart';
 import 'package:share/share.dart';
+
+import 'listtile.dart';
 
 const Color appcolor = Color.fromARGB(255, 68, 68, 68);
 
@@ -38,18 +41,19 @@ class MainDrawer extends StatelessWidget {
                   height: 15,
                 ),
                 Text(
-                  'PU Engineering Notes',
+                  'PUFOE Notes',
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 )
               ],
             )),
         CustomListTile(
-          customicon: Icons.notifications_none,
-          customtext: 'PUSOE Notice',
-          followlink: () {
-            Navigator.pop(context);
-          },
-        ),
+            customicon: Icons.send_sharp,
+            customtext: 'Send Notes',
+            followlink: () async {
+              await OpenMailApp.composeNewEmailInMailApp(
+                  emailContent: EmailContent(
+                      to: ['manjilkoirala7@gmail.com'], subject: 'Notes'));
+            }),
         CustomListTile(
           customicon: Icons.share_outlined,
           customtext: 'Share',
@@ -87,45 +91,3 @@ class MainDrawer extends StatelessWidget {
 
 //CustomList
 
-class CustomListTile extends StatelessWidget {
-  final customicon;
-  String customtext;
-  final followlink;
-
-  CustomListTile(
-      {Key? key,
-      this.customicon,
-      required this.customtext,
-      required this.followlink})
-      : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: followlink,
-      child: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: SizedBox(
-          height: 40,
-          child: Row(
-            children: [
-              Icon(
-                customicon,
-                color: appcolor,
-                size: 28,
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              Text(
-                customtext,
-                style: TextStyle(
-                    fontSize: 18, fontWeight: FontWeight.w500, color: appcolor),
-              )
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}

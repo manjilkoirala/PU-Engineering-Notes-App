@@ -14,10 +14,11 @@ class PDFViewerPage extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(title: title, height: 50.0),
       body: const PDF(
+        pageSnap: true,
         enableSwipe: true,
         swipeHorizontal: false,
         autoSpacing: false,
-        pageFling: true,
+        pageFling: false,
       ).fromAsset(path),
     );
   }
@@ -35,8 +36,8 @@ class PDFViewerPageURL extends StatelessWidget {
         body: const PDF(
           enableSwipe: true,
           swipeHorizontal: false,
-          autoSpacing: false,
-          pageFling: true,
+          autoSpacing: true,
+          pageFling: false,
         ).cachedFromUrl(
           link,
           placeholder: (progress) => Column(

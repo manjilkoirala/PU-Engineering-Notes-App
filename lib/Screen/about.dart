@@ -106,7 +106,7 @@ class AboutApp extends StatelessWidget {
               height: 16,
             ),
             const Text(
-              "If any of your notes are included in this app and you don't want it to be here, you can directly email me at koiralamanjil7@gmail.com and I will remove it.",
+              "If any of your notes are included in this app and you don't want it to be here, you can directly email me at manjilkoirala7@gmail.com and I will remove it.",
               style: TextStyle(fontSize: 16),
             ),
           ],

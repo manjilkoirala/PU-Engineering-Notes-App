@@ -4,12 +4,12 @@
 import 'package:flutter/material.dart';
 import 'package:punotes/Screen/pdfview.dart';
 import 'package:punotes/Screen/tabbar.dart';
-import 'package:punotes/model/civilnotes.dart';
-import 'package:punotes/model/electricalnotes.dart';
+import 'package:punotes/model/notes/civilnotes.dart';
+import 'package:punotes/model/notes/electricalnotes.dart';
 import 'package:punotes/widgets/appbar.dart';
 
-import '../model/computernotes.dart';
-import '../model/notemodel.dart';
+import '../model/notes/computernotes.dart';
+import '../model/notes/notemodel.dart';
 import 'customlisttabbar.dart';
 
 class Subject extends StatelessWidget {

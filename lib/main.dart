@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:punotes/Screen/home.dart';
 import 'package:punotes/Screen/splash.dart';
 
 void main() {

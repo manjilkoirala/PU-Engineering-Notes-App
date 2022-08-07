@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
-import 'package:flutter_cached_pdfview/flutter_cached_pdfview.dart';
 import 'package:punotes/widgets/appbar.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class PDFViewerPage extends StatelessWidget {
   final title;
@@ -12,15 +12,11 @@ class PDFViewerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(title: title, height: 50.0),
-      body: const PDF(
-        pageSnap: true,
-        enableSwipe: true,
-        swipeHorizontal: false,
-        autoSpacing: true,
-        pageFling: false,
-      ).fromAsset(path),
-    );
+        appBar: MyAppBar(title: title, height: 50.0),
+        body: SfPdfViewer.asset(
+          path,
+          pageSpacing: 2,
+        ));
   }
 }
 
@@ -33,35 +29,9 @@ class PDFViewerPageURL extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: MyAppBar(title: title, height: 50.0),
-        body: const PDF(
-          enableSwipe: true,
-          swipeHorizontal: false,
-          autoSpacing: true,
-          pageFling: false,
-        ).cachedFromUrl(
+        body: SfPdfViewer.network(
           link,
-          placeholder: (progress) => Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('$progress % \nLoading'),
-              const Center(
-                child: Text(
-                  '(Loading time Depends upon your internet speed)',
-                  style: TextStyle(
-                    color: Colors.red,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          errorWidget: (error) => const Center(
-            child: Text(
-              'You are not connected to internet or some error occur.',
-              style: TextStyle(
-                  color: Color.fromARGB(255, 225, 28, 14), fontSize: 16),
-            ),
-          ),
+          pageSpacing: 2,
         ));
   }
 }

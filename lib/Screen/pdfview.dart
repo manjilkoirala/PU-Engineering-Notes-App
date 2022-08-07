@@ -17,7 +17,7 @@ class PDFViewerPage extends StatelessWidget {
         pageSnap: true,
         enableSwipe: true,
         swipeHorizontal: false,
-        autoSpacing: false,
+        autoSpacing: true,
         pageFling: false,
       ).fromAsset(path),
     );

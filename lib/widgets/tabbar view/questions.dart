@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:punotes/Screen/tabbar.dart';
-import 'package:punotes/model/questions.dart';
+import 'package:punotes/model/questionsmodel.dart';
 
 import 'package:punotes/widgets/subjects.dart';
 

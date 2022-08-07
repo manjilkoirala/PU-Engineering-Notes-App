@@ -2,8 +2,12 @@ import 'package:punotes/model/notes/notemodel.dart';
 
 class Syllabus {
   static final civil = [
-    Notes(subjecttitle: 'First Semester Civil', path: ''),
-    Notes(subjecttitle: 'Second Semester Civil', path: ''),
+    Notes(
+        subjecttitle: 'First Semester Civil',
+        path: 'assest/files/syllabus/civil/1civil.pdf'),
+    Notes(
+        subjecttitle: 'Second Semester Civil',
+        path: 'assest/files/syllabus/civil/2civil.pdf'),
     Notes(
         subjecttitle: 'Third Semester Civil',
         path: 'assest/files/syllabus/civil/3civil.pdf'),

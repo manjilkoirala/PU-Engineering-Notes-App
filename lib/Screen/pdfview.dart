@@ -92,17 +92,19 @@ class _PDFViewerPageURLState extends State<PDFViewerPageURL> {
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   const Padding(
-                    padding: EdgeInsets.all(20.0),
+                    padding: EdgeInsets.all(30.0),
                     child: LinearProgressIndicator(),
                   ),
-                  const Text("Loding depends upon your internet speed")
+                  const Text(
+                    "Loding depends upon your internet speed",
+                    style: TextStyle(color: Colors.red, fontSize: 16),
+                  )
                 ],
               ))
             : PDFViewer(
                 document: pdfDocument,
                 scrollDirection: Axis.vertical,
                 lazyLoad: false,
-                showNavigation: true,
               ));
   }
 }

@@ -59,7 +59,9 @@ class Syllabus {
 
   //electrical
   static final electrical = [
-    Notes(subjecttitle: 'First Semester Electrical', path: ''),
+    Notes(
+        subjecttitle: 'First Semester Electrical',
+        path: 'assest/files/syllabus/computer/1syllabus.pdf'),
     Notes(
         subjecttitle: 'Second Semester Electrical',
         path: 'assest/files/syllabus/computer/2syllabus.pdf'),

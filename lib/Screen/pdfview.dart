@@ -42,7 +42,6 @@ class _PDFViewerPageState extends State<PDFViewerPage> {
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   const CupertinoActivityIndicator(),
-                  const Text("Loding depends upon your internet speed")
                 ],
               ))
             : PDFViewer(

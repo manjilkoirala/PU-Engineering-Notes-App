@@ -3,7 +3,10 @@ import 'notemodel.dart';
 class Computer {
   static final computer1st = [
     Notes(subjecttitle: 'Engineering Math-1', path: ''),
-    Notes(subjecttitle: 'Physics', path: ''),
+    Notes(
+        subjecttitle: 'Physics',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFirst_semester%2FEngineering%20Physics.pdf?alt=media&token=87a8ca25-1076-4407-9cae-4d860dfcfbf0'),
     Notes(subjecttitle: 'Fundamental of \nComputing Technology', path: ''),
     Notes(subjecttitle: 'English for \nTechnical Communication', path: ''),
     Notes(
@@ -82,19 +85,43 @@ class Computer {
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFourth_semester%2FsociologyNotes.pdf?alt=media&token=3e0b1533-b72e-4777-9a18-df09857a472b'),
   ];
   static final computer5th = [
-    Notes(subjecttitle: 'Numerical Method', path: ''),
-    Notes(subjecttitle: 'Algorithm Analysis \nand Design', path: ''),
-    Notes(subjecttitle: 'Computer Graphics', path: ''),
-    Notes(subjecttitle: 'Operating System', path: ''),
-    Notes(subjecttitle: 'Research Methodology', path: ''),
+    Notes(
+        subjecttitle: 'Numerical Method',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFifth_Semester%2Fnumerical_method_Notes.pdf?alt=media&token=586589ae-3fd8-48ed-908d-905f714afbaa'),
+    Notes(
+        subjecttitle: 'Algorithm Analysis \nand Design',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFifth_Semester%2FaadNotes.pdf?alt=media&token=b996b998-a2f4-41bd-8c46-f2628fb1a933'),
+    Notes(
+        subjecttitle: 'Computer Graphics',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFifth_Semester%2FCOMPUTER%20GRAPHICS.pdf?alt=media&token=a72c864c-0f5e-42da-ad0b-450fd4db1130'),
+    Notes(
+        subjecttitle: 'Operating System',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFifth_Semester%2FOS_Notes.pdf?alt=media&token=f670e998-282b-46c1-86a4-3822ce130f59'),
+    Notes(
+        subjecttitle: 'Research Methodology',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFifth_Semester%2FRESEARCH_METHODOLOGY.pdf?alt=media&token=3fda0905-bd0c-4b15-b235-916c51d70973'),
   ];
   static final computer6th = [
-    Notes(subjecttitle: 'Project and \nOrganization Management', path: ''),
+    Notes(
+        subjecttitle: 'Project and \nOrganization Management',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSixth_Semester%2FPOM.pdf?alt=media&token=bf79355c-ca3d-4f9b-a5b0-7c1f9a924582'),
     Notes(subjecttitle: 'Theory of Computation', path: ''),
-    Notes(subjecttitle: 'Multimedia Technology', path: ''),
+    Notes(
+        subjecttitle: 'Multimedia Technology',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSixth_Semester%2FMultimedia%20note.pdf?alt=media&token=269aaa96-7f7a-4571-b3d3-53336f52084b'),
     Notes(subjecttitle: 'Computer Network', path: ''),
     Notes(subjecttitle: 'Probability and Statistics', path: ''),
-    Notes(subjecttitle: 'Engineering Economics', path: ''),
+    Notes(
+        subjecttitle: 'Engineering Economics',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSixth_Semester%2FEconomics.pdf?alt=media&token=f688a913-2217-41c3-9049-2b0eb3337047'),
   ];
   static final computer7th = [
     Notes(subjecttitle: 'Entrepreneurship', path: ''),

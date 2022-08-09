@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
       drawer: MainDrawer(),
       appBar: MyAppBar(
         height: 50.0,
-        title: 'PU Notes',
+        title: 'PUFOE Notes',
       ),
       body: HomePageBody(),
     );

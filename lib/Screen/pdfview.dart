@@ -15,9 +15,6 @@ class PDFViewerPage extends StatelessWidget {
         appBar: MyAppBar(title: title, height: 50.0),
         body: SfPdfViewer.asset(
           path,
-          onDocumentLoaded: (details) {
-            Text("Loaded");
-          },
         ));
   }
 }
@@ -33,9 +30,6 @@ class PDFViewerPageURL extends StatelessWidget {
         appBar: MyAppBar(title: title, height: 50.0),
         body: SfPdfViewer.network(
           link,
-          onDocumentLoaded: (details) {
-            Text("Loaded");
-          },
         ));
   }
 }

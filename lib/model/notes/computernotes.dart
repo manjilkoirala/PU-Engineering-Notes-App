@@ -7,8 +7,14 @@ class Computer {
         subjecttitle: 'Physics',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFirst_semester%2FEngineering%20Physics.pdf?alt=media&token=87a8ca25-1076-4407-9cae-4d860dfcfbf0'),
-    Notes(subjecttitle: 'Fundamental of \nComputing Technology', path: ''),
-    Notes(subjecttitle: 'English for \nTechnical Communication', path: ''),
+    Notes(
+        subjecttitle: 'Fundamental of \nComputing Technology',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFirst_semester%2FEDCT%20notes.pdf?alt=media&token=fac6aec2-cbee-4bfd-baee-a84627bc30b6'),
+    Notes(
+        subjecttitle: 'English for \nTechnical Communication',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFirst_semester%2FEnglish.pdf?alt=media&token=5f794d1a-ed4e-4cfa-8fbd-8df98b2dd76f'),
     Notes(
         subjecttitle: 'Computer Programming',
         path:
@@ -111,12 +117,18 @@ class Computer {
         subjecttitle: 'Project and \nOrganization Management',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSixth_Semester%2FPOM.pdf?alt=media&token=bf79355c-ca3d-4f9b-a5b0-7c1f9a924582'),
-    Notes(subjecttitle: 'Theory of Computation', path: ''),
+    Notes(
+        subjecttitle: 'Theory of Computation',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSixth_Semester%2FTOC.pdf?alt=media&token=f55c4fce-db62-455b-af8b-25d251e025d6'),
     Notes(
         subjecttitle: 'Multimedia Technology',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSixth_Semester%2FMultimedia%20note.pdf?alt=media&token=269aaa96-7f7a-4571-b3d3-53336f52084b'),
-    Notes(subjecttitle: 'Computer Network', path: ''),
+    Notes(
+        subjecttitle: 'Computer Network',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSixth_Semester%2Fcomputer-network-notes.pdf?alt=media&token=d564e668-61d5-49ef-bc47-b1c81b56a304'),
     Notes(subjecttitle: 'Probability and Statistics', path: ''),
     Notes(
         subjecttitle: 'Engineering Economics',

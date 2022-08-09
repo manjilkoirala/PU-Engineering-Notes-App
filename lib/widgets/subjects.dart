@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:punotes/Screen/pdfview.dart';
 import 'package:punotes/Screen/tabbar.dart';
 import 'package:punotes/model/notes/civilnotes.dart';
-import 'package:punotes/model/notes/electricalnotes.dart';
+// import 'package:punotes/model/notes/electricalnotes.dart';
 import 'package:punotes/widgets/appbar.dart';
 
 import '../model/notes/computernotes.dart';
@@ -63,32 +63,33 @@ class Subject extends StatelessWidget {
       if (title == "Eight Semester") {
         func = Civil.civil8th;
       }
-    } else if (titletext == "Electrical") {
-      if (title == "First Semester") {
-        func = Electrical.electrical1st;
-      }
-      if (title == "Second Semester") {
-        func = Electrical.electrical2nd;
-      }
-      if (title == "Third Semester") {
-        func = Electrical.electrical3rd;
-      }
-      if (title == "Fourth Semester") {
-        func = Electrical.electrical4th;
-      }
-      if (title == "Fifth Semester") {
-        func = Electrical.electrical5th;
-      }
-      if (title == "Sixth Semester") {
-        func = Electrical.electrical6th;
-      }
-      if (title == "Seventh Semester") {
-        func = Electrical.electrical7th;
-      }
-      if (title == "Eight Semester") {
-        func = Electrical.electrical8th;
-      }
     }
+    //else if (titletext == "Electrical") {
+    //   if (title == "First Semester") {
+    //     func = Electrical.electrical1st;
+    //   }
+    //   if (title == "Second Semester") {
+    //     func = Electrical.electrical2nd;
+    //   }
+    //   if (title == "Third Semester") {
+    //     func = Electrical.electrical3rd;
+    //   }
+    //   if (title == "Fourth Semester") {
+    //     func = Electrical.electrical4th;
+    //   }
+    //   if (title == "Fifth Semester") {
+    //     func = Electrical.electrical5th;
+    //   }
+    //   if (title == "Sixth Semester") {
+    //     func = Electrical.electrical6th;
+    //   }
+    //   if (title == "Seventh Semester") {
+    //     func = Electrical.electrical7th;
+    //   }
+    //   if (title == "Eight Semester") {
+    //     func = Electrical.electrical8th;
+    //   }
+    // }
 
     return Scaffold(
       appBar: MyAppBar(title: title, height: 50.0),

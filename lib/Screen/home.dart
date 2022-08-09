@@ -30,47 +30,63 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        childAspectRatio: 1,
-        crossAxisCount: 2,
-      ),
+    return ListView(
       children: [
-        MyGridView(
-          nameText: 'Civil',
-          myImage: 'assest/img/Civil.png',
-          tapHere: () {
-            titletext = 'Civil';
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => MyTabBar()));
-          },
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text(
+                "App is on the beta version. Notes, syllabus and questions of all faculty will be uploaded soon.",
+                style: TextStyle(color: appcolor),
+                textScaleFactor: 1.1,
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
         ),
-        MyGridView(
-          nameText: 'Computer',
-          myImage: 'assest/img/Computer.png',
-          tapHere: () {
-            titletext = 'Computer';
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => MyTabBar()));
-          },
+        Container(
+          height: MediaQuery.of(context).size.height - 190,
+          child: GridView(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+            ),
+            children: [
+              MyGridView(
+                nameText: 'Civil',
+                myImage: 'assest/img/Civil.png',
+                tapHere: () {
+                  titletext = 'Civil';
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MyTabBar()));
+                },
+              ),
+              MyGridView(
+                nameText: 'Computer',
+                myImage: 'assest/img/Computer.png',
+                tapHere: () {
+                  titletext = 'Computer';
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MyTabBar()));
+                },
+              ),
+              MyGridView(
+                nameText: 'Electrical',
+                myImage: 'assest/img/Electrical.png',
+                tapHere: () {
+                  titletext = 'Electrical';
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MyTabBar()));
+                },
+              ),
+              MyGridView(
+                  nameText: 'Electronics',
+                  myImage: 'assest/img/Electronics.png',
+                  tapHere: () {}),
+            ],
+          ),
         ),
-        MyGridView(
-          nameText: 'Electrical',
-          myImage: 'assest/img/Electrical.png',
-          tapHere: () {
-            titletext = 'Electrical';
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => MyTabBar()));
-          },
-        ),
-        MyGridView(
-            nameText: 'Electronics',
-            myImage: 'assest/img/Electronics.png',
-            tapHere: () {
-              titletext = 'Electronics';
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => MyTabBar()));
-            }),
       ],
     );
   }

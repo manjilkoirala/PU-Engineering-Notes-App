@@ -2,10 +2,7 @@ import 'package:punotes/model/notes/notemodel.dart';
 
 class Question {
   static final civil = [
-    Notes(
-        subjecttitle: 'First Semester Civil',
-        path:
-            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/civil_QB%2F1st%20semester.pdf?alt=media&token=15a34783-2aa7-4071-a6f2-5d9c8760dc2b'),
+    Notes(subjecttitle: 'First Semester Civil', path: ''),
     Notes(
         subjecttitle: 'Second Semester Civil',
         path:
@@ -39,7 +36,10 @@ class Question {
   //Computer
 
   static final computer = [
-    Notes(subjecttitle: 'First Semester Computer', path: ''),
+    Notes(
+        subjecttitle: 'First Semester Computer',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_QB%2F1st%20semester.pdf?alt=media&token=176c3010-3e53-440e-bee2-a31547e69df0'),
     Notes(
         subjecttitle: 'Second Semester Computer',
         path:

@@ -48,7 +48,7 @@ class _SplashState extends State<Splash> {
               height: 10,
             ),
             const Text(
-              "By Manjil Koirala",
+              "PUFOE Notes",
               style: TextStyle(fontSize: 16),
             ),
           ],

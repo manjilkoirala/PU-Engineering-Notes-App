@@ -60,7 +60,10 @@ class Question {
         subjecttitle: 'Sixth Semester Computer',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_QB%2F6th%20computer.pdf?alt=media&token=be1d7772-1a5c-4a77-a1f3-722e5dcab0d8'),
-    Notes(subjecttitle: 'Seventh Semester Computer', path: ''),
+    Notes(
+        subjecttitle: 'Seventh Semester Computer',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_QB%2F7th%20semester.pdf?alt=media&token=62768aee-6015-4d73-a89d-0ba06adcbf52'),
     Notes(
         subjecttitle: 'Eight Semester Computer',
         path:

@@ -2,7 +2,6 @@ import 'notemodel.dart';
 
 class Computer {
   static final computer1st = [
-    Notes(subjecttitle: 'Engineering Math-1', path: ''),
     Notes(
         subjecttitle: 'Physics',
         path:
@@ -136,14 +135,35 @@ class Computer {
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSixth_Semester%2FEconomics.pdf?alt=media&token=f688a913-2217-41c3-9049-2b0eb3337047'),
   ];
   static final computer7th = [
-    Notes(subjecttitle: 'Entrepreneurship', path: ''),
-    Notes(subjecttitle: 'Artificial Intelligence', path: ''),
-    Notes(subjecttitle: 'Software Engineering', path: ''),
-    Notes(subjecttitle: 'Simulation and Modeling', path: ''),
+    Notes(
+        subjecttitle: 'Entrepreneurship',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSeventh_Semester%2FEntrepenership.pdf?alt=media&token=bf5779a4-6027-4b40-a155-1beffacca589'),
+    Notes(
+        subjecttitle: 'Artificial Intelligence',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSeventh_Semester%2FAI_Notes.pdf?alt=media&token=01d149a5-c6db-49ce-86da-a49f30f5c045'),
+    Notes(
+        subjecttitle: 'Software Engineering',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSeventh_Semester%2Fsoftwareengineering.pdf?alt=media&token=f60a9cd8-9ea7-40d7-af82-6745805ad97d'),
+    Notes(
+        subjecttitle: 'Simulation and Modeling',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSeventh_Semester%2FSystem%20Simulation.pdf?alt=media&token=bc3d88d1-76ac-45ac-ab5a-0be0e68ce7fc'),
   ];
   static final computer8th = [
-    Notes(subjecttitle: 'Data mining and \nData warehousing', path: ''),
-    Notes(subjecttitle: 'Cryptography', path: ''),
-    Notes(subjecttitle: 'Advance Computer \nArchitecture', path: ''),
+    Notes(
+        subjecttitle: 'Data mining and \nData warehousing',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FEight_Semester%2FDatamining.pdf?alt=media&token=5caae89f-7cc2-4286-a177-09d972b9f09c'),
+    Notes(
+        subjecttitle: 'Cryptography',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FEight_Semester%2FCryptography.pdf?alt=media&token=891e20d1-59bc-4c51-9db9-05351245a333'),
+    Notes(
+        subjecttitle: 'Advance Computer \nArchitecture',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FEight_Semester%2FDatamining.pdf?alt=media&token=5caae89f-7cc2-4286-a177-09d972b9f09c'),
   ];
 }

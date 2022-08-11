@@ -6,9 +6,14 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   final title;
   final button;
   final height;
+  final action;
 
   const MyAppBar(
-      {Key? key, required this.title, this.button, required this.height})
+      {Key? key,
+      required this.title,
+      this.button,
+      required this.height,
+      this.action})
       : super(key: key);
   @override
   Size get preferredSize => Size.fromHeight(height);
@@ -21,6 +26,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: const Color.fromARGB(255, 45, 45, 45),
       title: Text(title),
       bottom: button,
+      actions: action,
     );
   }
 }

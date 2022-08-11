@@ -21,7 +21,6 @@ class Computer {
   ];
 
   static final computer2nd = [
-    Notes(subjecttitle: 'Engineering Math-II', path: ''),
     Notes(
         subjecttitle: 'Chemistry',
         path:

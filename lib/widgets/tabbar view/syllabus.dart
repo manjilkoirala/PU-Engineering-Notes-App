@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:punotes/Screen/pdfview.dart';
 import 'package:punotes/Screen/tabbar.dart';

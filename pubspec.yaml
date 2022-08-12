@@ -38,6 +38,8 @@ dependencies:
   open_mail_app: ^0.4.5
   internet_file: any
   pdfx: ^2.2.0
+  rename: any
+  store_redirect: ^2.0.1
   
   
   

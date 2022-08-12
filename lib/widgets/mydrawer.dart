@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:open_mail_app/open_mail_app.dart';
 import 'package:punotes/Screen/about.dart';
 import 'package:share/share.dart';
+import 'package:store_redirect/store_redirect.dart';
 
 import 'listtile.dart';
 
@@ -59,14 +60,15 @@ class MainDrawer extends StatelessWidget {
           customtext: 'Share',
           followlink: () {
             Share.share(
-                'https://play.google.com/store/apps/details?id=com.techlearnhere.nepresults');
+                'https://play.google.com/store/apps/details?id=com.techlearnhere.pufoenotes');
           },
         ),
         CustomListTile(
           customicon: Icons.star_border_outlined,
           customtext: 'Rate Us',
           followlink: () {
-            Navigator.pop(context);
+            StoreRedirect.redirect(
+                androidAppId: "com.techlearnhere.pufoenotes");
           },
         ),
         CustomListTile(

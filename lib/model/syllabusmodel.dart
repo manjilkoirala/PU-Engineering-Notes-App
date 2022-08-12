@@ -2,9 +2,7 @@ import 'package:punotes/model/notes/notemodel.dart';
 
 class Syllabus {
   static final civil = [
-    Notes(
-        subjecttitle: 'First Semester Civil',
-        path: 'assest/files/syllabus/civil/1civil.pdf'),
+    // Notes(subjecttitle: 'First Semester Civil', path: ''),
     Notes(
         subjecttitle: 'Second Semester Civil',
         path: 'assest/files/syllabus/civil/2civil.pdf'),
@@ -24,7 +22,7 @@ class Syllabus {
         subjecttitle: 'Seventh Semester',
         path: 'assest/files/syllabus/civil/7civil.pdf'),
     Notes(
-        subjecttitle: 'Eight Semester Civil',
+        subjecttitle: 'Eighth Semester Civil',
         path: 'assest/files/syllabus/civil/8civil.pdf'),
   ];
 
@@ -53,7 +51,7 @@ class Syllabus {
         subjecttitle: 'Seventh Semester Computer',
         path: 'assest/files/syllabus/computer/7syllabus.pdf'),
     Notes(
-        subjecttitle: 'Eight Semester Computer',
+        subjecttitle: 'Eighth Semester Computer',
         path: 'assest/files/syllabus/computer/8syllabus.pdf'),
   ];
 
@@ -81,7 +79,7 @@ class Syllabus {
         subjecttitle: 'Seventh Semester Computer',
         path: 'assest/files/syllabus/electrical/7electrical.pdf'),
     Notes(
-        subjecttitle: 'Eight Semester Computer',
+        subjecttitle: 'Eighth Semester Computer',
         path: 'assest/files/syllabus/electrical/8electrical.pdf'),
   ];
 }

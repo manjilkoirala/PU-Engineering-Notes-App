@@ -3,7 +3,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:punotes/Screen/tabbar.dart';
-
 import '../widgets/appbar.dart';
 import '../widgets/mydrawer.dart';
 
@@ -46,7 +45,7 @@ class HomePageBody extends StatelessWidget {
             ),
           ),
         ),
-        Container(
+        SizedBox(
           height: MediaQuery.of(context).size.height - 190,
           child: GridView(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

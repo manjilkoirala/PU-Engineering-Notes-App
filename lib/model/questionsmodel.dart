@@ -31,7 +31,7 @@ class Question {
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/civil_QB%2F7TH%20SEMESTER.pdf?alt=media&token=0507c08d-32e2-4abf-b74d-1f3ecb9cc53a'),
     Notes(
-        subjecttitle: 'Eight Semester Civil',
+        subjecttitle: 'Eighth Semester Civil',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/civil_QB%2F8th%20SEM.pdf?alt=media&token=c2cc52cb-b20a-4de0-a4c4-af72c6116944'),
   ];
@@ -68,15 +68,15 @@ class Question {
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_QB%2F7th%20semester.pdf?alt=media&token=62768aee-6015-4d73-a89d-0ba06adcbf52'),
     Notes(
-        subjecttitle: 'Eight Semester Computer',
+        subjecttitle: 'Eighth Semester Computer',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_QB%2F8th%20semester.pdf?alt=media&token=50ec88a7-2657-4c8f-a1b6-6fb5eb86f116'),
   ];
 
   //electrical
   static final electrical = [
-    Notes(subjecttitle: 'First Semester Electrical', path: ''),
-    Notes(subjecttitle: 'Second Semester Electrical', path: ''),
+    // Notes(subjecttitle: 'First Semester Electrical', path: ''),
+    // Notes(subjecttitle: 'Second Semester Electrical', path: ''),
     Notes(
         subjecttitle: 'Third Semester Electrical',
         path:
@@ -85,9 +85,9 @@ class Question {
         subjecttitle: 'Fourth Semester Computer',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Electrical_QB%2F4th%20electrical.pdf?alt=media&token=90cc33b6-cf9d-40b6-9ff3-64b27b25cf34'),
-    Notes(subjecttitle: 'Fifth Semester Computer', path: ''),
-    Notes(subjecttitle: 'Sixth Semester Computer', path: ''),
-    Notes(subjecttitle: 'Seventh Semester Computer', path: ''),
-    Notes(subjecttitle: 'Eight Semester Computer', path: ''),
+    // Notes(subjecttitle: 'Fifth Semester Computer', path: ''),
+    // Notes(subjecttitle: 'Sixth Semester Computer', path: ''),
+    // Notes(subjecttitle: 'Seventh Semester Computer', path: ''),
+    // Notes(subjecttitle: 'Eighth Semester Computer', path: ''),
   ];
 }

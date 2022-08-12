@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_typing_uninitialized_variables, deprecated_member_use
 
-import 'package:flutter/services.dart';
 import 'package:internet_file/internet_file.dart';
 import 'package:flutter/material.dart';
 import 'package:pdfx/pdfx.dart';
@@ -42,9 +41,12 @@ class _PDFViewerPageState extends State<PDFViewerPage> {
           title: widget.title,
           height: 50.0,
           action: <Widget>[
-            IconButton(
-              icon: const Icon(Icons.navigate_before),
-              onPressed: () {
+            InkWell(
+              child: const Icon(Icons.navigate_before),
+              onLongPress: () {
+                _pdfController.jumpToPage(_actualPageNumber - 5);
+              },
+              onTap: () {
                 _pdfController.previousPage(
                   curve: Curves.ease,
                   duration: const Duration(milliseconds: 100),
@@ -58,9 +60,12 @@ class _PDFViewerPageState extends State<PDFViewerPage> {
                 style: const TextStyle(fontSize: 16),
               ),
             ),
-            IconButton(
-              icon: const Icon(Icons.navigate_next),
-              onPressed: () {
+            InkWell(
+              child: const Icon(Icons.navigate_next),
+              onLongPress: () {
+                _pdfController.jumpToPage(_actualPageNumber + 5);
+              },
+              onTap: () {
                 _pdfController.nextPage(
                   curve: Curves.ease,
                   duration: const Duration(milliseconds: 100),
@@ -69,29 +74,32 @@ class _PDFViewerPageState extends State<PDFViewerPage> {
             ),
           ],
         ),
-        body: PdfView(
-          pageSnapping: false,
-          scrollDirection: Axis.vertical,
-          controller: _pdfController,
-          onDocumentLoaded: (document) {
-            setState(() {
-              _allPagesCount = document.pagesCount;
-            });
-          },
-          onPageChanged: (page) {
-            setState(() {
-              _actualPageNumber = page;
-            });
-          },
-          builders: PdfViewBuilders<DefaultBuilderOptions>(
-            options: const DefaultBuilderOptions(
-              loaderSwitchDuration: Duration(seconds: 1),
+        body: Scrollbar(
+          child: PdfView(
+            pageSnapping: false,
+            scrollDirection: Axis.vertical,
+            controller: _pdfController,
+            onDocumentLoaded: (document) {
+              setState(() {
+                _allPagesCount = document.pagesCount;
+              });
+            },
+            onPageChanged: (page) {
+              setState(() {
+                _actualPageNumber = page;
+              });
+            },
+            builders: PdfViewBuilders<DefaultBuilderOptions>(
+              options: const DefaultBuilderOptions(
+                loaderSwitchDuration: Duration(seconds: 1),
+              ),
+              documentLoaderBuilder: (_) =>
+                  const Center(child: CircularProgressIndicator()),
+              pageLoaderBuilder: (_) =>
+                  const Center(child: CircularProgressIndicator()),
+              errorBuilder: (_, error) =>
+                  const Center(child: Text("File is not available.")),
             ),
-            documentLoaderBuilder: (_) =>
-                const Center(child: CircularProgressIndicator()),
-            pageLoaderBuilder: (_) =>
-                const Center(child: CircularProgressIndicator()),
-            errorBuilder: (_, error) => Center(child: Text(error.toString())),
           ),
         ));
   }
@@ -169,37 +177,40 @@ class _PDFViewerPageURLState extends State<PDFViewerPageURL> {
             ),
           ],
         ),
-        body: PdfView(
-          scrollDirection: Axis.vertical,
-          pageSnapping: false,
-          controller: _pdfController,
-          onDocumentLoaded: (document) {
-            setState(() {
-              _allPagesCount = document.pagesCount;
-            });
-          },
-          onPageChanged: (page) {
-            setState(() {
-              _actualPageNumber = page;
-            });
-          },
-          builders: PdfViewBuilders<DefaultBuilderOptions>(
-            options: const DefaultBuilderOptions(
-              loaderSwitchDuration: Duration(seconds: 1),
+        body: Scrollbar(
+          child: PdfView(
+            scrollDirection: Axis.vertical,
+            pageSnapping: false,
+            controller: _pdfController,
+            onDocumentLoaded: (document) {
+              setState(() {
+                _allPagesCount = document.pagesCount;
+              });
+            },
+            onPageChanged: (page) {
+              setState(() {
+                _actualPageNumber = page;
+              });
+            },
+            builders: PdfViewBuilders<DefaultBuilderOptions>(
+              options: const DefaultBuilderOptions(
+                loaderSwitchDuration: Duration(seconds: 1),
+              ),
+              documentLoaderBuilder: (_) => Center(
+                  child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  const CircularProgressIndicator(),
+                  const Text('Loading depends upon your internet speed.')
+                ],
+              )),
+              pageLoaderBuilder: (_) =>
+                  const Center(child: CircularProgressIndicator()),
+              errorBuilder: (_, error) => const Center(
+                  child: Text(
+                      "You are not connected to internet or file is not available.")),
             ),
-            documentLoaderBuilder: (_) => Center(
-                child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              // ignore: prefer_const_literals_to_create_immutables
-              children: [
-                const CircularProgressIndicator(),
-                const Text('Loading depends upon your internet speed.')
-              ],
-            )),
-            pageLoaderBuilder: (_) =>
-                const Center(child: CircularProgressIndicator()),
-            errorBuilder: (_, error) => const Center(
-                child: Text("Check your internet connection and try again.")),
           ),
         ));
   }

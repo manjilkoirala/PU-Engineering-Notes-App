@@ -3,6 +3,10 @@ import 'notemodel.dart';
 class Computer {
   static final computer1st = [
     Notes(
+        subjecttitle: 'Math-I',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFirst_semester%2FMath%201.pdf?alt=media&token=bc50d7d6-4f9f-43ba-8bd9-8e806ae5bca1'),
+    Notes(
         subjecttitle: 'Physics',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFirst_semester%2FEngineering%20Physics.pdf?alt=media&token=87a8ca25-1076-4407-9cae-4d860dfcfbf0'),
@@ -127,7 +131,14 @@ class Computer {
         subjecttitle: 'Computer Network',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSixth_Semester%2Fcomputer-network-notes.pdf?alt=media&token=d564e668-61d5-49ef-bc47-b1c81b56a304'),
-    Notes(subjecttitle: 'Probability and Statistics', path: ''),
+    Notes(
+        subjecttitle: 'Probability',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFourth_Semester%2Fporbability.pdf?alt=media&token=cd8951e6-daea-4109-bb97-475e19f02121'),
+    Notes(
+        subjecttitle: 'Statistics',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFourth_Semester%2FSTATISTICS.pdf?alt=media&token=9149dc64-2549-4405-8827-e03bd5339798'),
     Notes(
         subjecttitle: 'Engineering Economics',
         path:

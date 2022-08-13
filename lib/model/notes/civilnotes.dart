@@ -3,6 +3,10 @@ import 'notemodel.dart';
 class Civil {
   static final civil1st = [
     Notes(
+        subjecttitle: 'Math-I',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFirst_semester%2FMath%201.pdf?alt=media&token=bc50d7d6-4f9f-43ba-8bd9-8e806ae5bca1'),
+    Notes(
         subjecttitle: 'Chemistry',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSecond_semester%2FChemistry.pdf?alt=media&token=11559e70-7000-4208-bde5-071013757bd6'),
@@ -36,8 +40,14 @@ class Civil {
 
   static final civil3rd = [
     // Notes(subjecttitle: 'Electric Circuit \nand Machines', path: ''),
-    // Notes(subjecttitle: 'Engineering Geology', path: ''),
-    // Notes(subjecttitle: 'Fluid Mechanics', path: ''),
+    Notes(
+        subjecttitle: 'Engineering Geology',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FThird_Semester%2FGeology.pdf?alt=media&token=f015aa26-570d-45d9-9f37-624a8cc7b969'),
+    Notes(
+        subjecttitle: 'Fluid Mechanics',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FThird_Semester%2FFluid%20Mechanics_Notes.pdf?alt=media&token=fd318a74-8081-4a71-aeed-199b31d71383'),
     Notes(
         subjecttitle: 'Mathematics III',
         path:
@@ -48,15 +58,31 @@ class Civil {
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FThird_Semester%2FSOM_Notes.pdf?alt=media&token=043648f8-3270-4a0c-a3fa-a9208fcfb0d1'),
   ];
   static final civil4th = [
-    // Notes(subjecttitle: 'Engineering Hydrology', path: ''),
+    Notes(
+        subjecttitle: 'Engineering Hydrology\n(Hydrograph Analysis)',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFourth_Semester%2FCh5_Hydrograph%20analysis.pdf?alt=media&token=069a91e4-11f9-4f8b-8a98-1e8651b129ef'),
     // Notes(subjecttitle: 'Fundamentals of Architecture', path: ''),
-    // Notes(subjecttitle: 'Hydraulics', path: ''),
-    // Notes(subjecttitle: 'Probability and Statistics', path: ''),
+    Notes(
+        subjecttitle: 'Hydraulics',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFourth_Semester%2FHydraulicsNotes.pdf?alt=media&token=88bf1062-1cdf-4e0c-a9d0-44d73fea6b6d'),
+    Notes(
+        subjecttitle: 'Probability',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFourth_Semester%2Fporbability.pdf?alt=media&token=cd8951e6-daea-4109-bb97-475e19f02121'),
+    Notes(
+        subjecttitle: 'Statistics',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFourth_Semester%2FSTATISTICS.pdf?alt=media&token=9149dc64-2549-4405-8827-e03bd5339798'),
     Notes(
         subjecttitle: 'Research Methodology',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFifth_Semester%2FRESEARCH_METHODOLOGY.pdf?alt=media&token=3fda0905-bd0c-4b15-b235-916c51d70973'),
-    // Notes(subjecttitle: 'Theory of Structure-1', path: ''),
+    Notes(
+        subjecttitle: 'Theory of Structure-1',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFourth_Semester%2FTOS_1.pdf?alt=media&token=cddb065b-0516-49b8-beae-f19b3d1308d2'),
   ];
   static final civil5th = [
     Notes(
@@ -68,16 +94,21 @@ class Civil {
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFifth_Semester%2FConcrete.pdf?alt=media&token=9b0cf698-53fd-4c31-8c58-85082d8627b8'),
     // Notes(subjecttitle: 'Soil Mechanics', path: ''),
-    // Notes(subjecttitle: 'Survey Camp', path: ''),
-    // Notes(subjecttitle: 'Theory of structure-II', path: ''),
     Notes(
-        subjecttitle: 'Transportation Engineering',
+        subjecttitle: 'Theory of structure-II',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFifth_Semester%2FTOS%202.pdf?alt=media&token=2982eee2-8a62-484a-a9ac-4d6ca86fc35f'),
+    Notes(
+        subjecttitle: 'Transportation Engineering-I',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FFifth_Semester%2FTransportation.pdf?alt=media&token=14eecf6d-7593-450c-82df-63c343505f48'),
     // Notes(subjecttitle: 'Water Supply Engineering', path: ''),
   ];
   static final civil6th = [
-    // Notes(subjecttitle: 'Design of Steel \nand Timber Structure', path: ''),
+    Notes(
+        subjecttitle: 'Design of Steel \nand Timber Structure',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FSixth_Semester%2FSteel%20and%20Timber.pdf?alt=media&token=bf49b15f-3932-4e4e-8e4d-1e9cb526d9f5'),
     Notes(
         subjecttitle: 'Engineering Economics',
         path:
@@ -87,8 +118,14 @@ class Civil {
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FSixth_Semester%2FFoundation%20Engineering.pdf?alt=media&token=bc76b1ba-f203-4c45-ab61-73ebcc4c90fc'),
     // Notes(subjecttitle: 'Irrigation Engineering', path: ''),
-    // Notes(subjecttitle: 'Sanitary Engineering', path: ''),
-    // Notes(subjecttitle: 'Transportation Engineering', path: ''),
+    Notes(
+        subjecttitle: 'Sanitary Engineering',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FSixth_Semester%2Fsanitary.pdf?alt=media&token=c834a1d7-05da-4eb0-b5a2-a1340ff365ae'),
+    Notes(
+        subjecttitle: 'Transportation Engineering-II',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FSixth_Semester%2FTranspEngg%202.pdf?alt=media&token=2edbcb9c-0ee8-4ba6-b1bd-2d0b4c47155f'),
   ];
   static final civil7th = [
     // Notes(
@@ -102,8 +139,14 @@ class Civil {
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FSeventh_Semester%2FConstruction%20Management%20Notes.pdf?alt=media&token=dde01d27-7aff-455e-96f6-667ea4643f70'),
     // Notes(subjecttitle: 'Design of Reinforced \nConcrete Structures', path: ''),
-    // Notes(subjecttitle: 'Estimation and Valuation', path: ''),
-    // Notes(subjecttitle: 'Hydropower Engineering', path: ''),
+    Notes(
+        subjecttitle: 'Estimation and Valuation',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FSeventh_Semester%2FEstimation.pdf?alt=media&token=e561bb37-f13f-4a36-ba6a-e874229f0889'),
+    Notes(
+        subjecttitle: 'Hydropower Engineering',
+        path:
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Civil_Notes%2FSeventh_Semester%2FHydropower.pdf?alt=media&token=1f692f09-7c23-4885-baef-61d50e7ab161'),
   ];
   static final civil8th = [
     Notes(

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_typing_uninitialized_variables, deprecated_member_use
+// ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:internet_file/internet_file.dart';
 import 'package:flutter/material.dart';

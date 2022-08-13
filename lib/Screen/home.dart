@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, must_be_immutable, prefer_typing_uninitialized_variables
+// ignore_for_file:prefer_typing_uninitialized_variables
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       drawer: MainDrawer(),
       appBar: MyAppBar(
         height: 50.0,
@@ -31,24 +31,24 @@ class HomePageBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Card(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Text(
-                "App is on the beta version. Notes, syllabus and questions of all faculty will be uploaded soon.",
-                style: TextStyle(color: appcolor),
-                textScaleFactor: 1.1,
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-        ),
+        // const Padding(
+        //   padding: EdgeInsets.all(16.0),
+        //   child: Card(
+        //     child: Padding(
+        //       padding: EdgeInsets.all(16.0),
+        //       child: Text(
+        //         "App is on the beta version. Notes, syllabus and questions of all faculty will be uploaded soon.",
+        //         style: TextStyle(color: appcolor),
+        //         textScaleFactor: 1.1,
+        //         textAlign: TextAlign.center,
+        //       ),
+        //     ),
+        //   ),
+        // ),
         SizedBox(
           height: MediaQuery.of(context).size.height - 190,
           child: GridView(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
             ),
             children: [
@@ -57,8 +57,10 @@ class HomePageBody extends StatelessWidget {
                 myImage: 'assest/img/Civil.png',
                 tapHere: () {
                   titletext = 'Civil';
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyTabBar()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MyTabBar()));
                 },
               ),
               MyGridView(
@@ -66,8 +68,10 @@ class HomePageBody extends StatelessWidget {
                 myImage: 'assest/img/Computer.png',
                 tapHere: () {
                   titletext = 'Computer';
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyTabBar()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MyTabBar()));
                 },
               ),
               MyGridView(
@@ -75,8 +79,10 @@ class HomePageBody extends StatelessWidget {
                 myImage: 'assest/img/Electrical.png',
                 tapHere: () {
                   titletext = 'Electrical';
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyTabBar()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MyTabBar()));
                 },
               ),
               MyGridView(
@@ -84,8 +90,10 @@ class HomePageBody extends StatelessWidget {
                   myImage: 'assest/img/Electronics.png',
                   tapHere: () {
                     titletext = "Electronics";
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => MyTabBar()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const MyTabBar()));
                   }),
             ],
           ),
@@ -116,12 +124,12 @@ class MyGridView extends StatelessWidget {
               height: 100,
               width: 100,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
               nameText.toString(),
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 16,
               ),
             )

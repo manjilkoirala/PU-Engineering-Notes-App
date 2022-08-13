@@ -63,35 +63,7 @@ class Subject extends StatelessWidget {
       if (title == "Eighth Semester") {
         func = Civil.civil8th;
       }
-    } else if (titletext == "Electronics" || titletext == "Electrical") {
-      func = null;
     }
-    //else if (titletext == "Electrical") {
-    //   if (title == "First Semester") {
-    //     func = Electrical.electrical1st;
-    //   }
-    //   if (title == "Second Semester") {
-    //     func = Electrical.electrical2nd;
-    //   }
-    //   if (title == "Third Semester") {
-    //     func = Electrical.electrical3rd;
-    //   }
-    //   if (title == "Fourth Semester") {
-    //     func = Electrical.electrical4th;
-    //   }
-    //   if (title == "Fifth Semester") {
-    //     func = Electrical.electrical5th;
-    //   }
-    //   if (title == "Sixth Semester") {
-    //     func = Electrical.electrical6th;
-    //   }
-    //   if (title == "Seventh Semester") {
-    //     func = Electrical.electrical7th;
-    //   }
-    //   if (title == "Eight Semester") {
-    //     func = Electrical.electrical8th;
-    //   }
-    // }
 
     return Scaffold(
       appBar: MyAppBar(title: title, height: 50.0),

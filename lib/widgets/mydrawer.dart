@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_typing_uninitialized_variables, must_be_immutable
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_typing_uninitialized_variables, must_be_immutable
 
 import 'package:flutter/material.dart';
 import 'package:open_mail_app/open_mail_app.dart';
@@ -19,7 +19,7 @@ class MainDrawer extends StatelessWidget {
         child: ListView(
       children: [
         DrawerHeader(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                   colors: [Color.fromARGB(255, 57, 57, 57), appcolor]),
             ),
@@ -38,10 +38,10 @@ class MainDrawer extends StatelessWidget {
                     child: Image.asset('assest/img/Logo.png'),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Text(
+                const Text(
                   'PUFOE Notes',
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 )
@@ -75,8 +75,8 @@ class MainDrawer extends StatelessWidget {
           customicon: Icons.info_outline,
           customtext: 'About',
           followlink: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => AboutApp()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const AboutApp()));
           },
         ),
         CustomListTile(
@@ -90,6 +90,3 @@ class MainDrawer extends StatelessWidget {
     ));
   }
 }
-
-//CustomList
-

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, must_be_immutable, prefer_typing_uninitialized_variables
+// ignore_for_file: must_be_immutable, prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
 import 'package:pufoe_notes/widgets/mydrawer.dart';
@@ -56,7 +56,7 @@ class CustomTile extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(left: 10, bottom: 10),
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               border: Border(
                   bottom:
                       BorderSide(color: Color.fromARGB(255, 215, 215, 215)))),
@@ -67,9 +67,9 @@ class CustomTile extends StatelessWidget {
               children: [
                 Text(
                   customtext,
-                  style: TextStyle(fontSize: 18, color: appcolor),
+                  style: const TextStyle(fontSize: 18, color: appcolor),
                 ),
-                Icon(Icons.arrow_right)
+                const Icon(Icons.arrow_right)
               ],
             ),
           ),

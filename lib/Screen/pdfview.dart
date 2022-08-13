@@ -3,7 +3,7 @@
 import 'package:internet_file/internet_file.dart';
 import 'package:flutter/material.dart';
 import 'package:pdfx/pdfx.dart';
-import 'package:punotes/widgets/appbar.dart';
+import 'package:pufoe_notes/widgets/appbar.dart';
 
 class PDFViewerPage extends StatefulWidget {
   final title;
@@ -26,12 +26,6 @@ class _PDFViewerPageState extends State<PDFViewerPage> {
       document: PdfDocument.openAsset(widget.path),
     );
     super.initState();
-  }
-
-  @override
-  void dispose() {
-    _pdfController.dispose();
-    super.dispose();
   }
 
   @override
@@ -129,12 +123,6 @@ class _PDFViewerPageURLState extends State<PDFViewerPageURL> {
       initialPage: _initialPage,
     );
     super.initState();
-  }
-
-  @override
-  void dispose() {
-    _pdfController.dispose();
-    super.dispose();
   }
 
   @override

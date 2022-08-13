@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
-import 'package:punotes/Screen/tabbar.dart';
-import 'package:punotes/model/questionsmodel.dart';
+import 'package:pufoe_notes/Screen/tabbar.dart';
+import 'package:pufoe_notes/model/questionsmodel.dart';
 
-import 'package:punotes/widgets/subjects.dart';
+import 'package:pufoe_notes/widgets/subjects.dart';
 
 class QuestionsList extends StatelessWidget {
   const QuestionsList({Key? key}) : super(key: key);
@@ -18,6 +18,8 @@ class QuestionsList extends StatelessWidget {
       func = Question.computer;
     } else if (titletext == 'Electrical') {
       func = Question.electrical;
+    } else if (titletext == 'Electronics') {
+      func = Question.electronics;
     }
 
     return ListView.builder(

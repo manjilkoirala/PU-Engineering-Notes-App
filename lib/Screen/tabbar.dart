@@ -4,9 +4,9 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:punotes/widgets/appbar.dart';
-import 'package:punotes/widgets/tabbar%20view/notes.dart';
-import 'package:punotes/widgets/tabbar%20view/questions.dart';
+import 'package:pufoe_notes/widgets/appbar.dart';
+import 'package:pufoe_notes/widgets/tabbar%20view/notes.dart';
+import 'package:pufoe_notes/widgets/tabbar%20view/questions.dart';
 
 import '../widgets/tabbar view/syllabus.dart';
 

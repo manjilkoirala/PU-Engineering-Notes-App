@@ -6,8 +6,8 @@ class Civil {
         subjecttitle: 'Chemistry',
         path:
             'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FSecond_semester%2FChemistry.pdf?alt=media&token=11559e70-7000-4208-bde5-071013757bd6'),
-    Notes(subjecttitle: 'Applied Mechanics-I\n(Statics)', path: ''),
-    Notes(subjecttitle: 'Civil Engineering Materials', path: ''),
+    // Notes(subjecttitle: 'Applied Mechanics-I\n(Statics)', path: ''),
+    // Notes(subjecttitle: 'Civil Engineering Materials', path: ''),
     Notes(
         subjecttitle: 'Electrical Engineering',
         path:

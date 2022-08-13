@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:punotes/Screen/splash.dart';
+import 'package:pufoe_notes/Screen/splash.dart';
 
 void main() {
   runApp(const MyApp());

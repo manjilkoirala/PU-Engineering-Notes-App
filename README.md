@@ -1,4 +1,4 @@
-# punotes
+# pufoe_notes
 
 A new Flutter project.
 

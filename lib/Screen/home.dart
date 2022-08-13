@@ -2,7 +2,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:punotes/Screen/tabbar.dart';
+import 'package:pufoe_notes/Screen/tabbar.dart';
 import '../widgets/appbar.dart';
 import '../widgets/mydrawer.dart';
 
@@ -82,7 +82,11 @@ class HomePageBody extends StatelessWidget {
               MyGridView(
                   nameText: 'Electronics',
                   myImage: 'assest/img/Electronics.png',
-                  tapHere: () {}),
+                  tapHere: () {
+                    titletext = "Electronics";
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MyTabBar()));
+                  }),
             ],
           ),
         ),

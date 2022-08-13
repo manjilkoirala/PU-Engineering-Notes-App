@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:punotes/widgets/appbar.dart';
-import 'package:punotes/widgets/mydrawer.dart';
+import 'package:pufoe_notes/widgets/appbar.dart';
+import 'package:pufoe_notes/widgets/mydrawer.dart';
 
 class AboutApp extends StatelessWidget {
   const AboutApp({Key? key}) : super(key: key);

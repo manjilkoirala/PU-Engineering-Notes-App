@@ -1,4 +1,4 @@
-import 'package:punotes/model/notes/notemodel.dart';
+import 'package:pufoe_notes/model/notes/notemodel.dart';
 
 class Syllabus {
   static final civil = [
@@ -67,19 +67,48 @@ class Syllabus {
         subjecttitle: 'Third Semester Electrical',
         path: 'assest/files/syllabus/electrical/3electrical.pdf'),
     Notes(
-        subjecttitle: 'Fourth Semester Computer',
+        subjecttitle: 'Fourth Semester Electrical',
         path: 'assest/files/syllabus/electrical/4electrical.pdf'),
     Notes(
-        subjecttitle: 'Fifth Semester Computer',
+        subjecttitle: 'Fifth Semester Electrical',
         path: 'assest/files/syllabus/electrical/5electrical.pdf'),
     Notes(
-        subjecttitle: 'Sixth Semester Computer',
+        subjecttitle: 'Sixth Semester Electrical',
         path: 'assest/files/syllabus/electrical/6electrical.pdf'),
     Notes(
-        subjecttitle: 'Seventh Semester Computer',
+        subjecttitle: 'Seventh Semester Electrical',
         path: 'assest/files/syllabus/electrical/7electrical.pdf'),
     Notes(
-        subjecttitle: 'Eighth Semester Computer',
+        subjecttitle: 'Eighth Semester Electrical',
         path: 'assest/files/syllabus/electrical/8electrical.pdf'),
+  ];
+
+  //electronics
+
+  static final electronics = [
+    Notes(
+        subjecttitle: 'First Semester Electronics',
+        path: 'assest/files/syllabus/computer/1syllabus.pdf'),
+    Notes(
+        subjecttitle: 'Second Semester Electronics',
+        path: 'assest/files/syllabus/computer/2syllabus.pdf'),
+    Notes(
+        subjecttitle: 'Third Semester Electronics',
+        path: 'assest/files/syllabus/electronics/3electronics.pdf'),
+    Notes(
+        subjecttitle: 'Fourth Semester Electronics',
+        path: 'assest/files/syllabus/electronics/4electronics.pdf'),
+    Notes(
+        subjecttitle: 'Fifth Semester Electronics',
+        path: 'assest/files/syllabuselectronics/5electronics.pdf'),
+    Notes(
+        subjecttitle: 'Sixth Semester Electronics',
+        path: 'assest/files/syllabus/electronics/6electronics.pdf'),
+    Notes(
+        subjecttitle: 'Seventh Semester Electronics',
+        path: 'assest/files/syllabus/electronics/7electronics.pdf'),
+    Notes(
+        subjecttitle: 'Eighth Semester Electronics',
+        path: 'assest/files/syllabus/electronics/8electronics.pdf'),
   ];
 }

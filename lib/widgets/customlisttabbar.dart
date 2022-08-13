@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, must_be_immutable, prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
-import 'package:punotes/widgets/mydrawer.dart';
+import 'package:pufoe_notes/widgets/mydrawer.dart';
 
 class CustomListView extends StatelessWidget {
   final followlink1;
@@ -36,7 +36,7 @@ class CustomListView extends StatelessWidget {
         CustomTile(customtext: 'Fifth Semester', followlink: followlink5),
         CustomTile(customtext: 'Sixth Semester', followlink: followlink6),
         CustomTile(customtext: 'Seventh Semester', followlink: followlink7),
-        CustomTile(customtext: 'Eight Semester', followlink: followlink8),
+        CustomTile(customtext: 'Eighth Semester', followlink: followlink8),
       ],
     );
   }

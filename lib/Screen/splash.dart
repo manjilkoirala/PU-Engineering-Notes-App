@@ -1,8 +1,8 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import 'package:punotes/Screen/home.dart';
-import 'package:punotes/widgets/mydrawer.dart';
+import 'package:pufoe_notes/Screen/home.dart';
+import 'package:pufoe_notes/widgets/mydrawer.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);

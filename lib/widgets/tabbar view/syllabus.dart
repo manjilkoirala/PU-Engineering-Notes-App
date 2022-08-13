@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
-import 'package:punotes/Screen/pdfview.dart';
-import 'package:punotes/Screen/tabbar.dart';
-import 'package:punotes/model/notes/notemodel.dart';
-import 'package:punotes/model/syllabusmodel.dart';
-import 'package:punotes/widgets/customlisttabbar.dart';
+import 'package:pufoe_notes/Screen/pdfview.dart';
+import 'package:pufoe_notes/Screen/tabbar.dart';
+import 'package:pufoe_notes/model/notes/notemodel.dart';
+import 'package:pufoe_notes/model/syllabusmodel.dart';
+import 'package:pufoe_notes/widgets/customlisttabbar.dart';
 
 class SyllabusList extends StatelessWidget {
   const SyllabusList({Key? key}) : super(key: key);
@@ -19,6 +19,8 @@ class SyllabusList extends StatelessWidget {
       func = Syllabus.computer;
     } else if (titletext == 'Electrical') {
       func = Syllabus.electrical;
+    } else if (titletext == 'Electronics') {
+      func = Syllabus.electronics;
     }
     return ListView.builder(
       itemCount: func.length,

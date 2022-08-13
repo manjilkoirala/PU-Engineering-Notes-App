@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pufoe_notes/Screen/tabbar.dart';
 
 import '../customlisttabbar.dart';
 import '../subjects.dart';
@@ -10,68 +11,100 @@ class NoteList extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomListView(
       followlink1: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const Subject(
-                      title: 'First Semester',
-                    )));
+        if (titletext == "Electronics" || titletext == "Electrical") {
+          Navigator.canPop(context);
+        } else {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const Subject(
+                        title: 'First Semester',
+                      )));
+        }
       },
       followlink2: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const Subject(
-                      title: 'Second Semester',
-                    )));
+        if (titletext == "Electronics" || titletext == "Electrical") {
+          Navigator.canPop(context);
+        } else {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const Subject(
+                        title: 'Second Semester',
+                      )));
+        }
       },
       followlink3: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const Subject(
-                      title: 'Third Semester',
-                    )));
+        if (titletext == "Electronics" || titletext == "Electrical") {
+          Navigator.canPop(context);
+        } else {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const Subject(
+                        title: 'Third Semester',
+                      )));
+        }
       },
       followlink4: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const Subject(
-                      title: 'Fourth Semester',
-                    )));
+        if (titletext == "Electronics" || titletext == "Electrical") {
+          Navigator.canPop(context);
+        } else {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const Subject(
+                        title: 'Fourth Semester',
+                      )));
+        }
       },
       followlink5: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const Subject(
-                      title: 'Fifth Semester',
-                    )));
+        if (titletext == "Electronics" || titletext == "Electrical") {
+          Navigator.canPop(context);
+        } else {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const Subject(
+                        title: 'Fifth Semester',
+                      )));
+        }
       },
       followlink6: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const Subject(
-                      title: 'Sixth Semester',
-                    )));
+        if (titletext == "Electronics" || titletext == "Electrical") {
+          Navigator.canPop(context);
+        } else {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const Subject(
+                        title: 'Sixth Semester',
+                      )));
+        }
       },
       followlink7: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const Subject(
-                      title: 'Seventh Semester',
-                    )));
+        if (titletext == "Electronics" || titletext == "Electrical") {
+          Navigator.canPop(context);
+        } else {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const Subject(
+                        title: 'Seventh Semester',
+                      )));
+        }
       },
       followlink8: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const Subject(
-                      title: 'Eight Semester',
-                    )));
+        if (titletext == "Electronics" || titletext == "Electrical") {
+          Navigator.canPop(context);
+        } else {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const Subject(
+                        title: 'Eighth Semester',
+                      )));
+        }
       },
     );
   }

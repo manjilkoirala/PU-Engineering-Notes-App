@@ -2,11 +2,11 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
-import 'package:punotes/Screen/pdfview.dart';
-import 'package:punotes/Screen/tabbar.dart';
-import 'package:punotes/model/notes/civilnotes.dart';
-// import 'package:punotes/model/notes/electricalnotes.dart';
-import 'package:punotes/widgets/appbar.dart';
+import 'package:pufoe_notes/Screen/pdfview.dart';
+import 'package:pufoe_notes/Screen/tabbar.dart';
+import 'package:pufoe_notes/model/notes/civilnotes.dart';
+// import 'package:pufoe_notes/model/notes/electricalnotes.dart';
+import 'package:pufoe_notes/widgets/appbar.dart';
 
 import '../model/notes/computernotes.dart';
 import '../model/notes/notemodel.dart';
@@ -35,7 +35,7 @@ class Subject extends StatelessWidget {
         func = Computer.computer6th;
       } else if (title == "Seventh Semester") {
         func = Computer.computer7th;
-      } else if (title == "Eight Semester") {
+      } else if (title == "Eighth Semester") {
         func = Computer.computer8th;
       }
     } else if (titletext == "Civil") {
@@ -60,9 +60,11 @@ class Subject extends StatelessWidget {
       if (title == "Seventh Semester") {
         func = Civil.civil7th;
       }
-      if (title == "Eight Semester") {
+      if (title == "Eighth Semester") {
         func = Civil.civil8th;
       }
+    } else if (titletext == "Electronics" || titletext == "Electrical") {
+      func = null;
     }
     //else if (titletext == "Electrical") {
     //   if (title == "First Semester") {

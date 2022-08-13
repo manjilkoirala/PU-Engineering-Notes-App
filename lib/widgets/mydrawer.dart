@@ -2,13 +2,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:open_mail_app/open_mail_app.dart';
-import 'package:punotes/Screen/about.dart';
+import 'package:pufoe_notes/Screen/about.dart';
 import 'package:share/share.dart';
 import 'package:store_redirect/store_redirect.dart';
 
 import 'listtile.dart';
 
-const Color appcolor = Color.fromARGB(255, 68, 68, 68);
+const Color appcolor = Color(0xFF444444);
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);

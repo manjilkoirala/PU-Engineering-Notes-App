@@ -1,4 +1,4 @@
-import 'package:punotes/model/notes/notemodel.dart';
+import 'package:pufoe_notes/model/notes/notemodel.dart';
 
 class Question {
   static final civil = [
@@ -90,4 +90,6 @@ class Question {
     // Notes(subjecttitle: 'Seventh Semester Computer', path: ''),
     // Notes(subjecttitle: 'Eighth Semester Computer', path: ''),
   ];
+
+  static final electronics = [];
 }

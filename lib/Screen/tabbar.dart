@@ -3,11 +3,13 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'package:pufoe_notes/widgets/appbar.dart';
 import 'package:pufoe_notes/widgets/tabbar%20view/notes.dart';
 import 'package:pufoe_notes/widgets/tabbar%20view/questions.dart';
 
+import '../widgets/ad_helper.dart';
 import '../widgets/tabbar view/syllabus.dart';
 
 var titletext;
@@ -20,6 +22,8 @@ class MyTabBar extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
+        bottomNavigationBar:
+            SizedBox(height: 60, child: AdWidget(ad: getbannerAd())),
         appBar: MyAppBar(
           height: 82.0,
           title: titletext,

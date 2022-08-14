@@ -2,9 +2,11 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:pufoe_notes/Screen/pdfview.dart';
 import 'package:pufoe_notes/Screen/tabbar.dart';
 import 'package:pufoe_notes/model/notes/civilnotes.dart';
+import 'package:pufoe_notes/widgets/ad_helper.dart';
 // import 'package:pufoe_notes/model/notes/electricalnotes.dart';
 import 'package:pufoe_notes/widgets/appbar.dart';
 
@@ -66,6 +68,8 @@ class Subject extends StatelessWidget {
     }
 
     return Scaffold(
+      bottomNavigationBar:
+          SizedBox(height: 60, child: AdWidget(ad: getbannerAd())),
       appBar: MyAppBar(title: title, height: 50.0),
       body: ListView.builder(
         itemCount: func.length,

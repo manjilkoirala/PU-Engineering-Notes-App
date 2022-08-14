@@ -23,6 +23,7 @@ dependencies:
   pdfx: ^2.2.0
   store_redirect: ^2.0.1
   url_launcher: ^6.1.5
+  google_mobile_ads: ^2.0.0
   
   
   

@@ -1,24 +1,36 @@
-// ignore_for_file:prefer_typing_uninitialized_variables
+// ignore_for_file:prefer_typing_uninitialized_variables, must_be_immutable
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:pufoe_notes/Screen/tabbar.dart';
+import 'package:pufoe_notes/widgets/ad_helper.dart';
 import '../widgets/appbar.dart';
 import '../widgets/mydrawer.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      drawer: MainDrawer(),
-      appBar: MyAppBar(
-        height: 50.0,
-        title: 'PUFOE Notes',
-      ),
-      body: HomePageBody(),
-    );
+    return Scaffold(
+        drawer: const MainDrawer(),
+        appBar: const MyAppBar(
+          height: 50.0,
+          title: 'PUFOE Notes',
+        ),
+        body: const HomePageBody(),
+        bottomNavigationBar: SizedBox(
+          height: 60,
+          child: AdWidget(
+            ad: getbannerAd(),
+          ),
+        ));
   }
 }
 
@@ -30,10 +42,7 @@ class HomePageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
-        const MyText(),
-        const MyListView(),
-      ],
+      children: [const MyText(), const MyListView()],
     );
   }
 }

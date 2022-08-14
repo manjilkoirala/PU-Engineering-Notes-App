@@ -1,9 +1,12 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:internet_file/internet_file.dart';
 import 'package:flutter/material.dart';
 import 'package:pdfx/pdfx.dart';
 import 'package:pufoe_notes/widgets/appbar.dart';
+
+import '../widgets/ad_helper.dart';
 
 class PDFViewerPage extends StatefulWidget {
   final title;
@@ -26,6 +29,13 @@ class _PDFViewerPageState extends State<PDFViewerPage> {
       document: PdfDocument.openAsset(widget.path),
     );
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _pdfController.dispose();
   }
 
   @override
@@ -126,8 +136,17 @@ class _PDFViewerPageURLState extends State<PDFViewerPageURL> {
   }
 
   @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _pdfController.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+        bottomNavigationBar:
+            SizedBox(height: 60, child: AdWidget(ad: getbannerAd())),
         appBar: MyAppBar(
           title: widget.title,
           height: 50.0,

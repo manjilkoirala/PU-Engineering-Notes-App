@@ -29,76 +29,82 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Column(
       children: [
-        // const Padding(
-        //   padding: EdgeInsets.all(16.0),
-        //   child: Card(
-        //     child: Padding(
-        //       padding: EdgeInsets.all(16.0),
-        //       child: Text(
-        //         "App is on the beta version. Notes, syllabus and questions of all faculty will be uploaded soon.",
-        //         style: TextStyle(color: appcolor),
-        //         textScaleFactor: 1.1,
-        //         textAlign: TextAlign.center,
-        //       ),
-        //     ),
-        //   ),
-        // ),
-        SizedBox(
-          height: MediaQuery.of(context).size.height - 190,
-          child: GridView(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-            ),
-            children: [
-              MyGridView(
-                nameText: 'Civil',
-                myImage: 'assest/img/Civil.png',
-                tapHere: () {
-                  titletext = 'Civil';
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const MyTabBar()));
-                },
-              ),
-              MyGridView(
-                nameText: 'Computer',
-                myImage: 'assest/img/Computer.png',
-                tapHere: () {
-                  titletext = 'Computer';
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const MyTabBar()));
-                },
-              ),
-              MyGridView(
-                nameText: 'Electrical',
-                myImage: 'assest/img/Electrical.png',
-                tapHere: () {
-                  titletext = 'Electrical';
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const MyTabBar()));
-                },
-              ),
-              MyGridView(
-                  nameText: 'Electronics',
-                  myImage: 'assest/img/Electronics.png',
-                  tapHere: () {
-                    titletext = "Electronics";
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const MyTabBar()));
-                  }),
-            ],
-          ),
-        ),
+        const MyText(),
+        const MyListView(),
       ],
+    );
+  }
+}
+
+class MyListView extends StatelessWidget {
+  const MyListView({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: GridView(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+        ),
+        children: [
+          MyGridView(
+            nameText: 'Civil',
+            myImage: 'assest/img/Civil.png',
+            tapHere: () {
+              titletext = 'Civil';
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const MyTabBar()));
+            },
+          ),
+          MyGridView(
+            nameText: 'Computer',
+            myImage: 'assest/img/Computer.png',
+            tapHere: () {
+              titletext = 'Computer';
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const MyTabBar()));
+            },
+          ),
+          MyGridView(
+            nameText: 'Electrical',
+            myImage: 'assest/img/Electrical.png',
+            tapHere: () {
+              titletext = 'Electrical';
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const MyTabBar()));
+            },
+          ),
+          MyGridView(
+              nameText: 'Electronics',
+              myImage: 'assest/img/Electronics.png',
+              tapHere: () {
+                titletext = "Electronics";
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const MyTabBar()));
+              }),
+        ],
+      ),
+    );
+  }
+}
+
+class MyText extends StatelessWidget {
+  const MyText({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Card(
+      child: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Text(
+          "App is on the beta version. Notes, syllabus and questions of all faculty will be uploaded soon.",
+          style: TextStyle(color: appcolor),
+          textScaleFactor: 1.1,
+          textAlign: TextAlign.center,
+        ),
+      ),
     );
   }
 }

@@ -26,7 +26,8 @@ class _HomePageState extends State<HomePage> {
         ),
         body: const HomePageBody(),
         bottomNavigationBar: SizedBox(
-          height: 60,
+          height: getbannerAd().size.height.toDouble(),
+          width: getbannerAd().size.width.toDouble(),
           child: AdWidget(
             ad: getbannerAd(),
           ),

@@ -5,7 +5,7 @@ class Computer {
     Notes(
         subjecttitle: 'Math-I',
         path:
-            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFirst_semester%2FMath%201.pdf?alt=media&token=bc50d7d6-4f9f-43ba-8bd9-8e806ae5bca1'),
+            'https://firebasestorage.googleapis.com/v0/b/mynotes-flutter-my.appspot.com/o/Computer_Notes%2FFirst_semester%2FMath%201.pdf?alt=media&token=2419b8f0-b628-4832-b5ca-8ebcc2c9857a'),
     Notes(
         subjecttitle: 'Physics',
         path:

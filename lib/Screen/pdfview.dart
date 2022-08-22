@@ -33,7 +33,6 @@ class _PDFViewerPageState extends State<PDFViewerPage> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     _pdfController.dispose();
   }
@@ -137,7 +136,6 @@ class _PDFViewerPageURLState extends State<PDFViewerPageURL> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     _pdfController.dispose();
   }

@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
             upgrader: Upgrader(
                 showIgnore: false,
                 shouldPopScope: () => true,
-                durationUntilAlertAgain: const Duration(seconds: 1)),
+                durationUntilAlertAgain: const Duration(minutes: 10)),
             child: const MyListView()),
         bottomNavigationBar: SizedBox(
           height: getbannerAd().size.height.toDouble(),

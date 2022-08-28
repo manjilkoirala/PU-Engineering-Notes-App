@@ -65,9 +65,11 @@ class CustomTile extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  customtext,
-                  style: const TextStyle(fontSize: 18, color: appcolor),
+                Expanded(
+                  child: Text(
+                    customtext,
+                    style: const TextStyle(fontSize: 18, color: appcolor),
+                  ),
                 ),
                 const Icon(Icons.arrow_right)
               ],

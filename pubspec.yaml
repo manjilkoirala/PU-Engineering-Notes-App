@@ -25,6 +25,8 @@ dependencies:
   url_launcher: ^6.1.5
   google_mobile_ads: ^2.0.0
   upgrader: any
+  cloud_firestore: ^3.4.6
+  firebase_core: ^1.21.1
   
   
   

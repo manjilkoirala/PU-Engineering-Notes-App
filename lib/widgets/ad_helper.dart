@@ -5,7 +5,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 class AdHelper {
   static String get bannerAdUnitId {
     if (Platform.isAndroid) {
-      return "ca-app-pub-6773492687881086/6558765101";
+      return "ca-app-pub-7131240275834376/9236081095";
     } else {
       throw UnsupportedError("Unsupported platform");
     }
